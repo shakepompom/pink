@@ -16,3 +16,4 @@ _`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`._
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/87862-pink
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/87862-pink.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/87862-pink
+pink: development pink-adaptive
