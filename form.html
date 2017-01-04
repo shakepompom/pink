@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Пинк: конкурс</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="logo  logo--white">
+        <a href="index.html"><img src="http://placehold.it/75x22" alt=""></a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">Открыть меню</button>
+        <!-- <div class="main-nav__wrapper"> -->
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item  main-nav__item--active">Конкурс</li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+          </ul>
+        <!-- </div> -->
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+      <p class="page-main__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <div class="form">
+        <form class="competition" action="#" method="post">
+          <fieldset class="competition__name">
+            <label for="surname">Фамилия:</label>
+            <input type="text" name="surname" id="surname" placeholder="Укажите фамилию">
+            <label for="name">Имя:</label>
+            <input type="text" name="name" id="name" placeholder="Введите ваше имя">
+            <label for="patronymic">Отчество:</label>
+            <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+          </fieldset>
+          <fieldset class="competition__achievement">
+            <p>Ваши безбашенные достижения в путешествии</p>
+            <input type="checkbox" name="achievement" id="selfie" value="selfie" checked>
+            <label for="selfie">Сделал селфи с акулой</label>
+            <input type="checkbox" name="achievement" id="burnt" value="burnt" checked>
+            <label for="burnt">Обгорел на пляже</label>
+            <input type="checkbox" name="achievement" id="chuck-norris" value="chuck-norris">
+            <label for="chuck-norris">Видел Чака Норриса</label>
+            <input type="checkbox" name="achievement" id="present" value="present">
+            <label for="present">Накупил сувениров</label>
+            <input type="checkbox" name="achievement" id="tower" value="tower" checked>
+            <label for="tower">Удержал башню</label>
+            <input type="checkbox" name="achievement" id="hotel" value="hotel">
+            <label for="hotel">Разгромил отель</label>
+          </fieldset>
+          <fieldset class="competition__contacts">
+            <label for="tel">Номерок телефончика</label>
+            <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+            <label for="email">Адресок почты</label>
+            <input type="email" name="email" id="email" placeholder="E-mail, пожалуйста">
+          </fieldset>
+          <fieldset class="competition__app">
+            <p>С каким приложением путешествовали?</p>
+            <input type="radio" name="app" id="iOS" value="iOS" checked>
+            <label for="iOS">Pink для iOS</label>
+            <input type="radio" name="app" id="Android" value="Android">
+            <label for="Android">Pink на Android</label>
+            <input type="radio" name="app" id="Windows" value="Windows">
+            <label for="Windows">Windows Phone</label>
+          </fieldset>
+          <fieldset class="competition__emotions">
+            <p>Опишите свои эмоции</p>
+            <textarea name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="btn  competition__submit" type="submit">Отправить форму</button>
+          <p>* — обязательные поля</p>
+        </form>
+      </div>
+    </main>
+    <footer class="page__footer  page__footer--inner">
+      <div class="logo  logo--glasses">
+        <a href="index.html"><img src="http://placehold.it/61x40" alt=""></a>
+      </div>
+      <div class="logo  logo--black">
+        <a href="index.html"><img src="http://placehold.it/75x23" alt=""></a>
+      </div>
+      <div class="social">
+        <a href="#" class="social__icon  social__icon--twitter">Twitter</a>
+        <a href="#" class="social__icon  social__icon--facebook">Facebook</a>
+        <a href="#" class="social__icon  social__icon--youtube">Youtube</a>
+      </div>
+      <div class="copyrights">
+        Разработано
+        <a href="https://htmlacademy.ru/"><img class="logo  logo--html-academy" src="http://placehold.it/27x34" alt=""></a>
+      </div>
+    </footer>
+  </body>
+</html>
