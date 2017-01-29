@@ -1,4 +1,31 @@
 .reviews {
   .blocks-wrapper();
   background: #ffffff;
+  .container();
+}
+
+.reviews__user-datas {
+  display: none;
+}
+
+@media @tablet-width {
+
+  .reviews__wrapper {
+    min-height: 250px;
+  }
+
+  .reviews__item {
+    position: relative;
+  }
+
+  .reviews__user-name {
+    position: absolute;
+    bottom: -35px;
+  }
+
+  .reviews__user-datas {
+    position: absolute;
+    bottom: -70px;
+    display: block;
+  }
 }

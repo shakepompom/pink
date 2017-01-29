@@ -1,8 +1,87 @@
 .advantages {
   .blocks-wrapper();
+  .container();
   background: #f2f2f2;
+}
 
-  &__question {
-    background: #ffffff;
+.advantages__question {
+  background: #ffffff;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;//может понадобится
+}
+
+.advantages__item > img {
+  display: none;
+}
+
+.advantages__item:nth-child(3) > img {
+  display: block;
+}
+
+.advantages__24-hours {
+  display: none;
+}
+
+@media @tablet-width {
+  .advantages__wrapper {
+    .clearfix();
+    position: relative;
+  }
+
+  .advantages__question {
+    font-size: 40px;
+    line-height: 53px;
+  }
+
+  .advantages__items {
+    float: right;
+    width: 320px;
+  }
+
+  .advantages__item:nth-child(3) > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .advantages__24-hours {
+    display: block;
+    .clearfix();
+  }
+
+  .advantages__24-hours > img {
+    float: left;
+  }
+
+  .advantages__24-hours-wrapper {
+    float: right;
+    width: 320px;
+  }
+}
+
+@media @desktop-width {
+  .advantages__items {
+    float: none;
+    width: 100%;
+  }
+
+  .advantages__item {
+    display: inline-block;
+    width: 240px;
+    position: relative;
+    padding-top: 285px;
+  }
+
+  .advantages__item > img {
+    float: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .advantages__24-hours-wrapper {
+    width: 570px;
   }
 }

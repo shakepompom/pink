@@ -1,4 +1,43 @@
 .download {
-  .blocks-wrapper();
   color: #ffffff;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 275px; //временно
+}
+
+.download__item {
+  display: inline-block;
+}
+
+.download__item a {
+  font-size: 0;
+}
+
+@media @tablet-width {
+  .download {
+    position: absolute;
+    bottom: 100px;
+    left: 40px;
+    width: 300px;
+    margin: 0;
+    outline: 1px solid blue;
+    height: 415px; //временно
+  }
+
+  .download::before {
+    content: "Взгляните на жизнь иначе!";
+    display: block;
+    width: 200px;
+    font-size: 40px;
+    line-height: 53px;
+    text-align: center;
+    font-weight: lighter;
+  }
+}
+
+@media @desktop-width {
+  .download {
+    bottom: 165px;
+    left: 130px;
+  }
 }

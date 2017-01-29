@@ -1,3 +1,35 @@
 .page-footer {
   background: #ffffff;
+  outline: 1px solid red;
+  .container();
+}
+
+.page-footer__wrapper {
+  .container();
+  outline: 1px solid yellow;
+}
+
+.page-footer__logo,
+.page-footer__social,
+.page-footer__copyrights {
+  display: none;
+}
+
+@media @tablet-width {
+
+  .page-footer {
+    width: 700px;
+  }
+
+  .page-footer__logo,
+  .page-footer__social,
+  .page-footer__copyrights {
+    display: inline-block;
+  }
+}
+
+@media @desktop-width {
+  .page-footer {
+    width: 1200px;
+  }
 }

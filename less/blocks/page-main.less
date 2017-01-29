@@ -1,14 +1,25 @@
 .page-main {
-  margin: 20px;
-  border: 1px solid red;
-  background: #283645 url("../img/bg-back-mobile.jpg") no-repeat center top;
+  outline: 1px solid red;
+  .container();
+}
 
-  &__title {
-    color: #ffffff;
+.page-main__title {
+  color: #ffffff;
+}
+
+.page-main__description {
+  color: #283645;
+  background: #ffffff;
+}
+
+@media @tablet-width {
+  .page-main {
+    width: 700px;
   }
+}
 
-  &__description {
-    color: #283645;
-    background: #ffffff;
+@media @desktop-width {
+  .page-main {
+    width: 1200px;
   }
 }

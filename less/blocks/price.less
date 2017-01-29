@@ -1,4 +1,24 @@
 .price {
   .blocks-wrapper();
+  .container();
   background: #f2f2f2;
+}
+
+.price__tariff-table {
+  display: none;
+}
+
+.price__item:nth-child(1),
+.price__item:nth-child(3) {
+  display: none;
+}
+
+@media @tablet-width {
+  ul.price__items {
+    display: none;
+  }
+
+  .price__tariff-table {
+    display: table;
+  }
 }

@@ -1,3 +1,18 @@
 .page-header {
-  background: #283645;
+  background: #283645 url("../img/bg-back-mobile.jpg") no-repeat center top;
+  outline: 1px solid red;
+  .container();
+  position: relative;
+}
+
+@media @tablet-width {
+  .page-header {
+    width: 700px;
+  }
+}
+
+@media @desktop-width {
+  .page-header {
+    width: 1200px;
+  }
 }
