@@ -1,0 +1,45 @@
+.inner-page {
+  position: absolute;
+  bottom: 0;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  text-align: center;
+}
+
+.inner-page__title {
+  color: white; //temp
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  padding: 30px;
+  padding-bottom: 80px;
+}
+
+.inner-page__description {
+  background-color: white; //temp
+  padding: 40px 20px;
+}
+
+@media @tablet-width {
+  .inner-page__title {
+    font-size: 50px;
+    line-height: 67px;
+    font-weight: lighter;
+    padding: 30px;
+    padding-bottom: 140px;
+  }
+
+  .inner-page__description {
+    padding: 75px 120px;
+  }
+}
+
+@media @desktop-width {
+  .inner-page__title {
+    padding: 105px 400px;
+  }
+
+  .inner-page__description {
+    padding: 100px 145px;
+  }
+}

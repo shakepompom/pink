@@ -3,16 +3,29 @@
   outline: 1px solid red;
   .container();
   position: relative;
+  min-height: 735px;
+}
+
+.page-header--inner {
+  min-height: 420px;
 }
 
 @media @tablet-width {
   .page-header {
     width: 700px;
   }
+
+  .page-header--inner {
+    min-height: 700px;
+  }
 }
 
 @media @desktop-width {
   .page-header {
     width: 1200px;
+  }
+
+  .page-header--inner {
+    min-height: 635px;
   }
 }

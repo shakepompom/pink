@@ -1,8 +1,70 @@
 .photo {
   .blocks-wrapper();
+  .container();
   background: #ffffff;
+}
 
-  &__item {
+.photo__items {
+  font-size: 0;
+}
+
+.photo__item {
+  margin: 20px;
+  background: #f2f2f2;
+
+  &--panorama img {
+    margin-left: -20px;
+    margin-top: 0;
+  }
+}
+
+@media @tablet-width {
+  .photo__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin: 20px;
+    margin-left: 0;
     background: #f2f2f2;
+
+    &:nth-child(2n+1) {
+      margin-right: 0;
+    }
+
+    &--panorama {
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+    }
+
+    &--panorama img {
+      width: 100%;
+      height: auto;
+      margin-left: -20px;
+      margin-top: -20px;
+    }
+  }
+
+  .photo__item img {
+    width: 100%;
+  }
+
+  .photo__item-wrapper {
+    // width: 300px;
+    padding: 10px 20px;
+  }
+}
+
+@media @desktop-width {
+  .photo__item {
+    // margin: 20px;
+
+    &:nth-child(2n+1) {
+      margin-right: 20px;
+    }
+
+    &:nth-child(3n+1) {
+      margin-right: 0;
+    }
   }
 }

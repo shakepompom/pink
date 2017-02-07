@@ -6,8 +6,12 @@
   .container();
   outline: 1px solid yellow;
   position: relative;
-  min-height: 460px;
+  // min-height: 460px;
 }
+
+// .main-nav__wrapper--inner {
+//   min-height: 420px;
+// }
 
 .main-nav__logo {
   float: left;
@@ -21,6 +25,7 @@
 
 .main-nav__items {
   position: absolute;
+  z-index: 1;
   top: 70px;
   display: none;
   width: 100%;
@@ -57,13 +62,13 @@
   }
 
   .main-nav__wrapper {
-    min-height: 730px;
+    // min-height: 730px;
   }
 }
 
 @media @desktop-width {
   .main-nav__wrapper {
-    min-height: 853px;
+    // min-height: 853px;
   }
 
   .main-nav__items {
