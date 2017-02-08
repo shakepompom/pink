@@ -23,8 +23,10 @@
         </div>
       </nav>
       <div class="inner-page">
-        <h1 class="inner-page__title">Фотографии пользователей</h1>
-        <p class="inner-page__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает Ваших?</p>
+        <!-- <div class="inner-page__wrapper"> -->
+          <h1 class="inner-page__title">Фотографии пользователей</h1>
+          <p class="inner-page__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает Ваших?</p>
+        <!-- </div> -->
       </div>
     </header>
     <main class="page-main">
@@ -91,34 +93,35 @@
       </div>
       <div class="upload">
         <p class="upload__description">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="upload__wrapper">
           <form action="#" method="post">
             <img src="http://placehold.it/280x374" alt="">
-            <a href="" class="upload__filter  upload__filter--crop  upload__filter--active">Обрезать</a>
-            <div class="upload__toggle"></div>
-            <a href="" class="upload__filter  upload__filter--fill">Насыщенность</a>
-            <div class="upload__toggle"></div>
-            <a href="" class="upload__filter  upload__filter--contrast">Контрастность</a>
-            <div class="upload__toggle"></div>
-            <button class="btn  upload__submit" type="submit">Запостить</button>
-            <button class="btn  upload__reset" type="reset">Отмена</button>
+            <div class="upload__wrapper">
+              <a href="" class="upload__filter  upload__filter--crop  upload__filter--active">Обрезать</a>
+              <div class="upload__toggle"></div>
+              <a href="" class="upload__filter  upload__filter--fill">Насыщенность</a>
+              <div class="upload__toggle"></div>
+              <a href="" class="upload__filter  upload__filter--contrast">Контрастность</a>
+              <div class="upload__toggle"></div>
+              <button class="btn  upload__submit" type="submit">Запостить</button>
+              <button class="btn  upload__reset" type="reset">Отмена</button>
+            </div>
           </form>
-        </div>
       </div>
     </main>
-    <footer class="page__footer  page__footer--inner">
-      <div class="logo">
-        <a class="logo  logo--glasses" href="index.html"><img src="http://placehold.it/61x40" alt=""></a>
-        <a class="logo  logo--black" href="index.html"><img src="http://placehold.it/75x23" alt=""></a>
-      </div>
-      <div class="social">
-        <a href="#" class="social__icon  social__icon--twitter">Twitter</a>
-        <a href="#" class="social__icon  social__icon--facebook">Facebook</a>
-        <a href="#" class="social__icon  social__icon--youtube">Youtube</a>
-      </div>
-      <div class="copyrights">
-        Разработано
-        <a href="https://htmlacademy.ru/"><img class="logo  logo--html-academy" src="http://placehold.it/27x34" alt=""></a>
+    <footer class="page-footer  page-footer--inner">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo  page-footer__logo--black">
+          <a href="index.html"><img src="http://placehold.it/147x40" alt=""></a>
+        </div>
+        <div class="page-footer__social">
+          <a href="#" class="btn  btn--social  btn--social-twitter">Twitter</a>
+          <a href="#" class="btn  btn--social  btn--social-facebook">Facebook</a>
+          <a href="#" class="btn  btn--social  btn--social-youtube">Youtube</a>
+        </div>
+        <div class="page-footer__copyrights">
+          Разработано
+          <a href="https://htmlacademy.ru/"><img class="logo  logo--html-academy" src="http://placehold.it/27x34" alt=""></a>
+        </div>
       </div>
     </footer>
   </body>

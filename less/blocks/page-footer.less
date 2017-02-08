@@ -15,16 +15,33 @@
   display: none;
 }
 
+.page-footer--inner .page-footer__logo,
+.page-footer--inner .page-footer__social,
+.page-footer--inner .page-footer__copyrights {
+  display: block;
+  text-align: center;
+}
+
 @media @tablet-width {
 
   .page-footer {
     width: 700px;
   }
 
-  .page-footer__logo,
-  .page-footer__social,
+  .page-footer__logo {
+    display: block;
+    float: left;
+    margin-right: 100px;
+  }
+
+  .page-footer__social {
+    display: block;
+    float: left;
+  }
+
   .page-footer__copyrights {
-    display: inline-block;
+    display: block;
+    float: right;
   }
 }
 
