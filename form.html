@@ -31,16 +31,29 @@
       <div class="form">
         <form class="competition" action="#" method="post">
           <fieldset class="competition__name">
-            <label for="surname">Фамилия:</label>
+            <!-- <label for="surname">Фамилия:</label>
             <input type="text" name="surname" id="surname" placeholder="Укажите фамилию">
             <label for="name">Имя:</label>
             <input type="text" name="name" id="name" placeholder="Введите ваше имя">
             <label for="patronymic">Отчество:</label>
-            <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+            <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже"> -->
+            <label for="surname">
+              Фамилия:
+              <input type="text" name="surname" id="surname" placeholder="Укажите фамилию">
+            </label>
+            <label for="name">
+              Имя:
+              <input type="text" name="name" id="name" placeholder="Введите ваше имя">
+            </label>
+            <label for="patronymic">
+              Отчество:
+              <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+            </label>
           </fieldset>
           <fieldset class="competition__achievement">
-            <p>Ваши безбашенные достижения в путешествии</p>
-            <input type="checkbox" name="achievement" id="selfie" value="selfie" checked>
+            <!-- <p>Ваши безбашенные достижения в путешествии</p> -->
+            <legend>Ваши безбашенные достижения в путешествии</legend>
+            <!-- <input type="checkbox" name="achievement" id="selfie" value="selfie" checked>
             <label for="selfie">Сделал селфи с акулой</label>
             <input type="checkbox" name="achievement" id="burnt" value="burnt" checked>
             <label for="burnt">Обгорел на пляже</label>
@@ -51,25 +64,67 @@
             <input type="checkbox" name="achievement" id="tower" value="tower" checked>
             <label for="tower">Удержал башню</label>
             <input type="checkbox" name="achievement" id="hotel" value="hotel">
-            <label for="hotel">Разгромил отель</label>
+            <label for="hotel">Разгромил отель</label> -->
+            <label for="selfie">
+              <input type="checkbox" name="achievement" id="selfie" value="selfie" checked>
+              Сделал селфи с акулой
+            </label>
+            <label for="burnt">
+              <input type="checkbox" name="achievement" id="burnt" value="burnt" checked>
+              Обгорел на пляже
+            </label>
+            <label for="chuck-norris">
+              <input type="checkbox" name="achievement" id="chuck-norris" value="chuck-norris">
+              Видел Чака Норриса
+            </label>
+            <label for="present">
+              <input type="checkbox" name="achievement" id="present" value="present">
+              Накупил сувениров
+            </label>
+            <label for="tower">
+              <input type="checkbox" name="achievement" id="tower" value="tower" checked>
+              Удержал башню
+            </label>
+            <label for="hotel">
+              <input type="checkbox" name="achievement" id="hotel" value="hotel">
+              Разгромил отель
+            </label>
           </fieldset>
           <fieldset class="competition__contacts">
+            <!-- <label for="tel">Номерок телефончика</label>
+            <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+            <label for="email">Адресок почты</label>
+            <input type="email" name="email" id="email" placeholder="E-mail, пожалуйста"> -->
             <label for="tel">Номерок телефончика</label>
             <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
             <label for="email">Адресок почты</label>
             <input type="email" name="email" id="email" placeholder="E-mail, пожалуйста">
           </fieldset>
           <fieldset class="competition__app">
-            <p>С каким приложением путешествовали?</p>
-            <input type="radio" name="app" id="iOS" value="iOS" checked>
+            <!-- <p>С каким приложением путешествовали?</p> -->
+            <legend>С каким приложением путешествовали?</legend>
+            <!-- <input type="radio" name="app" id="iOS" value="iOS" checked>
             <label for="iOS">Pink для iOS</label>
             <input type="radio" name="app" id="Android" value="Android">
             <label for="Android">Pink на Android</label>
             <input type="radio" name="app" id="Windows" value="Windows">
-            <label for="Windows">Windows Phone</label>
+            <label for="Windows">Windows Phone</label> -->
+            <label for="iOS">
+              <input type="radio" name="app" id="iOS" value="iOS" checked>
+              Pink для iOS
+            </label>
+            <label for="Android">
+              <input type="radio" name="app" id="Android" value="Android">
+              Pink на Android
+            </label>
+            <label for="Windows">
+              <input type="radio" name="app" id="Windows" value="Windows">
+              Windows Phone
+            </label>
           </fieldset>
           <fieldset class="competition__emotions">
-            <p>Опишите свои эмоции</p>
+            <!-- <p>Опишите свои эмоции</p> -->
+            <legend>Опишите свои эмоции</legend>
             <textarea name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <button class="btn  competition__submit" type="submit">Отправить форму</button>
@@ -78,18 +133,19 @@
       </div>
     </main>
     <footer class="page-footer  page-footer--inner">
-      <div class="logo">
-        <a class="logo  logo--glasses" href="index.html"><img src="http://placehold.it/61x40" alt=""></a>
-        <a class="logo  logo--black" href="index.html"><img src="http://placehold.it/75x23" alt=""></a>
-      </div>
-      <div class="social">
-        <a href="#" class="btn  btn--social  btn--social-twitter">Twitter</a>
-        <a href="#" class="btn  btn--social  btn--social-facebook">Facebook</a>
-        <a href="#" class="btn  btn--social  btn--social-youtube">Youtube</a>
-      </div>
-      <div class="copyrights">
-        Разработано
-        <a href="https://htmlacademy.ru/"><img class="logo  logo--html-academy" src="http://placehold.it/27x34" alt=""></a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo  page-footer__logo--black">
+          <a href="index.html"><img src="http://placehold.it/147x40" alt=""></a>
+        </div>
+        <div class="page-footer__social">
+          <a href="#" class="btn  btn--social  btn--social-twitter">Twitter</a>
+          <a href="#" class="btn  btn--social  btn--social-facebook">Facebook</a>
+          <a href="#" class="btn  btn--social  btn--social-youtube">Youtube</a>
+        </div>
+        <div class="page-footer__copyrights">
+          Разработано
+          <a href="https://htmlacademy.ru/"><img class="logo  logo--html-academy" src="http://placehold.it/27x34" alt=""></a>
+        </div>
       </div>
     </footer>
     <div class="modal-content">
