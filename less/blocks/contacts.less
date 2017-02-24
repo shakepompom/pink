@@ -1,21 +1,139 @@
 .contacts {
   .blocks-wrapper();
-  .container();
+  .container-fluid();
   background: #ffffff;
+  text-align: center;
+}
+
+.contacts__question {
+  width: 280px;
+  margin: 0 auto;
+  padding: 45px 0 40px 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 200;
+}
+
+.contacts__items {
+  display: flex;
+  flex-direction: column;
+  // margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .contacts__item {
-  display: inline-block;
-  width: 300px;
+  // display: block;
+  // width: 300px;
   outline: 1px solid green;
+  padding: 13px 0;
 }
 
-.map {
+.contacts__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts__information,
+.contacts__information a {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 200;
+}
+
+.contacts__map {
   height: 200px;
+  width: 114%;
+  margin-left: -20px;
+  outline: 1px solid yellow;
 }
 
 @media @tablet-width {
-  .map {
+  .contacts__question {
+    width: 400px;
+    padding: 56px 0 30px 0;
+    font-size: 40px;
+    line-height: 53px;
+    // font-weight: 700;
+  }
+
+  .contacts__items {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item {
+    // display: inline-block;
+    // padding: 27px 40px;
+    // width: 325px;
+    width: 48%;
+    padding: 27px 4%;
+    // margin: 0 1%;
+
+    // &:nth-child(2) {
+    //   margin-right: 0;
+    // }
+  }
+
+  .contacts__title {
+    // font-size: 40px;
+    // line-height: 53px;
+    // font-weight: 700;
+    margin-bottom: 7px;
+  }
+
+  .contacts__information {
+    // font-size: 40px;
+    // line-height: 53px;
+    // font-weight: 700;
+  }
+
+  .contacts__map {
     height: 380px;
+    width: 126%;
+    margin-left: -13%;
+  }
+}
+
+@media @desktop-width {
+  .contacts__question {
+    width: 480px;
+    font-size: 50px;
+    line-height: 66px;
+    // font-weight: 700;
+    padding: 76px 0 50px 0;
+  }
+
+  .contacts__items {
+    margin-bottom: 0;
+  }
+
+  .contacts__item {
+    padding: 20px 20px;
+    width: 300px;
+
+    &:nth-child(2) {
+      order: 2;
+    }
+  }
+
+  .contacts__title {
+    // font-size: 40px;
+    // line-height: 53px;
+    // font-weight: 700;
+    margin-bottom: 28px;
+  }
+
+  .contacts__information {
+    // font-size: 40px;
+    // line-height: 53px;
+    // font-weight: 700;
+  }
+
+  .contacts__map {
+    height: 500px;
+    width: 129%;
+    margin-left: -15%;
   }
 }

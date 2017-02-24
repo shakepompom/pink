@@ -1,5 +1,5 @@
 .main-nav {
-
+  // .container-fluid();
 }
 
 .main-nav__wrapper {
@@ -10,26 +10,26 @@
   position: relative;
   top: 4px;
   background-color: rgba(0, 0, 0, 0.3);
-  // min-height: 460px;
 }
 
-// .main-nav__wrapper--inner {
-//   min-height: 420px;
-// }
-
 .main-nav__logo {
-  // float: left;
+  z-index: 2;
   margin: 20px;
+  margin-left: 0;
 }
 
 .main-nav__toggle {
+  z-index: 2;
   // position: relative;
-  // float: right;
   margin-right: 20px;
+  margin-top: 25px;
+  width: 50px;
+  height: 25px;
   font-size: 0;
   background-color: transparent;
   border: none;
   // display: none;
+  cursor: pointer;
 
   &--open::before {
     content: "";
@@ -110,22 +110,51 @@
 }
 
 @media @tablet-width {
+  .main-nav__wrapper {
+    top: 0;
+  }
+
   .main-nav__logo {
-    margin-left: 0;
+    margin: 27px 0 40px 0;
+    // margin-left: 0;
+  }
+
+  .main-nav__logo img {
+    width: 150px;
+    height: 40px;
   }
 
   .main-nav__toggle {
-    margin-right: 0;
-  }
+
+      &--open::before {
+        top: 44px;
+        right: 0;
+        // display: none;
+      }
+
+      &--close::before {
+        top: 52px;
+        right: 0px;
+        // display: block;
+      }
+
+      &--close::after {
+        top: 52px;
+        right: 0px;
+        // display: block;
+      }
+    }
 
   .main-nav__items {
-    width: 700px;
-    top: 110px;
-    left: -40px;
+    // display: block;
+    width: 126%;
+    margin-left: -13%;
   }
 
-  .main-nav__wrapper {
-    // min-height: 730px;
+  .main-nav__items li:first-child {
+    // text-align: left;
+    height: 110px;
+    // margin-left: 20px;
   }
 }
 
@@ -139,15 +168,22 @@
     top: 0;
     left: 0;
     width: auto;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     // float: right;
     min-height: 110px;
     font-size: 0px;
+    margin-left: 0px;
+    background-color: transparent;
   }
 
   .main-nav__item {
     display: inline-block;
     padding: 40px;
+  }
+
+  .main-nav__items li:first-child {
+    display: none;
   }
 
   .main-nav__toggle {

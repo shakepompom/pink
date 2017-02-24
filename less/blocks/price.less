@@ -1,6 +1,6 @@
 .price {
   .blocks-wrapper();
-  .container();
+  .container-fluid();
   background: #f2f2f2;
 }
 
@@ -8,9 +8,24 @@
   display: none;
 }
 
+.price__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+// .price .slider__wrapper {
+//   order: 2;
+// }
+
 .price__item:nth-child(1),
 .price__item:nth-child(3) {
   display: none;
+}
+
+@media @tablet-width {
+  .price .slider__wrapper {
+    display: none;
+  }
 }
 
 @media @tablet-width {

@@ -1,52 +1,112 @@
 .page-footer {
-  background: #ffffff;
+  // background: #ffffff;
   outline: 1px solid red;
-  .container();
+  // .container-fluid();
+  // display: none;
+
+  &--main {
+    display: none;
+  }
 }
 
 .page-footer__wrapper {
-  .container();
+  .container-fluid();
+  display: flex;
   outline: 1px solid yellow;
+  background: #ffffff;
 }
 
-.page-footer__logo,
-.page-footer__social,
-.page-footer__copyrights {
-  display: none;
-}
+// .page-footer__logo,
+// .page-footer__social,
+// .page-footer__copyrights {
+//   // display: none;
+// }
 
-.page-footer--inner .page-footer__logo,
-.page-footer--inner .page-footer__social,
-.page-footer--inner .page-footer__copyrights {
-  display: block;
-  text-align: center;
-}
+// .page-footer--inner .page-footer__logo,
+// .page-footer--inner .page-footer__social,
+// .page-footer--inner .page-footer__copyrights {
+//   // display: block;
+//   // text-align: center;
+// }
+
+// .page-footer--main .page-footer__logo,
+// .page-footer--main .page-footer__social,
+// .page-footer--main .page-footer__copyrights {
+//   display: none;
+// }
 
 @media @tablet-width {
 
   .page-footer {
-    width: 700px;
+    // width: 700px;
+    // display: block;
+    // min-height: 127px;
+
+    &--main {
+      display: block;
+    }
+  }
+
+  .page-footer__wrapper {
+    .container-fluid();
+    justify-content: space-between;
+    min-height: 127px;
+    // align-items: baseline;
   }
 
   .page-footer__logo {
-    display: block;
-    float: left;
-    margin-right: 100px;
+    // display: block;
+    // float: left;
+    // margin-right: 100px;
+    width: 147px;
+    height: 40px;
+    margin-top: 36px;
   }
 
   .page-footer__social {
-    display: block;
-    float: left;
+    display: flex;
+    align-items: center;
+    // display: block;
+    // float: left;
   }
 
   .page-footer__copyrights {
-    display: block;
-    float: right;
+    // display: block;
+    // float: right;
+    // vertical-align: middle;
+    margin-top: 50px;
+  }
+
+  .page-footer__copyrights span {
+    vertical-align: middle;
+  }
+
+  .page-footer__copyrights img {
+    margin-left: 15px;
+    vertical-align: middle;
   }
 }
 
 @media @desktop-width {
   .page-footer {
-    width: 1200px;
+    // width: 1200px;
+    // min-height: 197px;
+  }
+
+  .page-footer__wrapper {
+    min-height: 197px;
+    // align-items: baseline;
+  }
+
+  .page-footer__logo {
+    margin-top: 70px;
+  }
+
+  .page-footer__copyrights {
+    margin-top: 85px;
+  }
+
+  .page-footer__copyrights span {
+    font-size: 18px;
   }
 }

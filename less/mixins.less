@@ -14,3 +14,20 @@
     width: 940px;
   }
 }
+
+.container-fluid() {
+  min-width: 320px;
+  width: auto;
+  padding: 0 20px;
+
+  @media @tablet-width {
+    width: 89%;
+    // max-width: 940px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media @desktop-width {
+    width: 78%;
+  }
+}
