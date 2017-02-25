@@ -1,70 +1,209 @@
 .photo {
   .blocks-wrapper();
-  .container();
+  .container-fluid();
   background: #ffffff;
 }
 
 .photo__items {
-  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // font-size: 0;
 }
 
 .photo__item {
-  margin: 20px;
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
   background: #f2f2f2;
 
-  &--panorama img {
-    margin-left: -20px;
+  &:first-child {
     margin-top: 0;
   }
+
+  // &:last-child {
+  //   margin-bottom: 0;
+  // }
+}
+
+.photo__panorama-of-day {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 140px;
+  height: 36px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  padding: 7px 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: @pink;
+}
+
+.photo__item img {
+  width: 100%;
+  height: auto;
+}
+
+.photo__item-wrapper {
+  // position: relative;
+  padding: 20px 15px;
+}
+
+.photo__user-name {
+  font-weight: 700;
+}
+
+.photo__time {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.photo__like {
+  padding: 10px 0;
+  padding-left: 32px;
+  font-size: 12px;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.photo__item--panorama img {
+  // width: 100%;
+  width: @full-width-mobile;
+  height: auto;
+  margin-left: @margin-full-width-mobile;
+  // margin-top: 0;
 }
 
 @media @tablet-width {
   .photo__item {
-    display: inline-block;
-    vertical-align: top;
-    width: 300px;
-    margin: 20px;
-    margin-left: 0;
-    background: #f2f2f2;
+    position: relative;
+    width: calc(300*100%/620);
+    margin: 10px 0;
+    // background: #f2f2f2;
 
-    &:nth-child(2n+1) {
-      margin-right: 0;
+    &:first-child {
+      margin-bottom: 50px;
     }
+  }
 
-    &--panorama {
-      width: 100%;
-      margin: 0;
-      padding: 20px;
-    }
+  .photo__item--panorama {
+    width: 100%;
+    // margin: 0;
+    // padding: 20px;
+  }
 
-    &--panorama img {
-      width: 100%;
-      height: auto;
-      margin-left: -20px;
-      margin-top: -20px;
-    }
+  // .photo__item--panorama img {
+  //   width: 100%;
+  //   height: auto;
+  //   margin-left: -20px;
+  //   margin-top: -20px;
+  // }
+
+
+  .photo__panorama-of-day {
+    top: 57px;
   }
 
   .photo__item img {
     width: 100%;
+    height: auto;
+  }
+
+  .photo__item-wrapper {
+    padding: 25px;
+    padding-bottom: 63px;
+  }
+
+  .photo__user-name {
+    // font-weight: 700;
+  }
+
+  .photo__time {
+    // font-size: 12px;
+    // font-weight: 200;
+  }
+
+  .photo__like {
+    position: absolute;
+    bottom: 27px;
+    left: 25px;
+    padding: 0;
+    // padding-right: 33px;
+    // padding-left: 32px;
+    // font-size: 12px;
+  }
+
+  .photo__item--panorama .photo__item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photo__user-comment--panorama {
+    order: 3;
+  }
+
+  .photo__like--panorama {
+    position: static;
+    order: 2;
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    // top: 0;
+    // right: 0;
+    // top: 26px;
+    // right: 27px;
+    // padding: 0;
+    padding-right: 35px;
+    // padding-left: 32px;
+    // font-size: 12px;
   }
 
   .photo__item-wrapper {
     // width: 300px;
-    padding: 10px 20px;
+    // padding: 10px 20px;
+  }
+
+  .photo__item--panorama img {
+    // width: 100%;
+    // margin-left: 0;
+    width: @full-width-tablet;
+    margin-left: @margin-full-width-tablet;
+    // height: auto;
+    // margin-top: 0;
   }
 }
 
 @media @desktop-width {
   .photo__item {
-    // margin: 20px;
+    width: calc(300*100%/940);
+    margin: 27px 0;
+    // margin-right: 1px;
 
-    &:nth-child(2n+1) {
-      margin-right: 20px;
-    }
+    // &:nth-child(3n+1) {
+    //   margin-right: 0;
+    // }
+  }
 
-    &:nth-child(3n+1) {
-      margin-right: 0;
-    }
+  .photo__item--panorama {
+    width: 100%;
+    // margin: 0;
+    // padding: 20px;
+  }
+
+  .photo__panorama-of-day {
+    top: 54px;
+  }
+
+  .photo__item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .photo__item--panorama img {
+    width: @full-width-desktop;
+    margin-left: @margin-full-width-desktop;
   }
 }

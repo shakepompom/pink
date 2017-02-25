@@ -43,8 +43,10 @@
 
 .contacts__map {
   height: 200px;
-  width: 114%;
-  margin-left: -20px;
+  // width: 100%;
+  margin-left: @margin-full-width-mobile;
+  width: @full-width-mobile;
+  // margin-left: -20px;
   outline: 1px solid yellow;
 }
 
@@ -91,8 +93,8 @@
 
   .contacts__map {
     height: 380px;
-    width: 126%;
-    margin-left: -13%;
+    width: @full-width-tablet;
+    margin-left: @margin-full-width-tablet;
   }
 }
 
@@ -133,7 +135,7 @@
 
   .contacts__map {
     height: 500px;
-    width: 129%;
-    margin-left: -15%;
+    width: @full-width-desktop;
+    margin-left: @margin-full-width-desktop;
   }
 }

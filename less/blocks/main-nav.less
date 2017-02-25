@@ -21,7 +21,7 @@
 .main-nav__toggle {
   z-index: 2;
   // position: relative;
-  margin-right: 20px;
+  margin-right: 0;
   margin-top: 25px;
   width: 50px;
   height: 25px;
@@ -35,7 +35,8 @@
     content: "";
     position: absolute;
     top: 25px;
-    right: 20px;
+    // right: 20px;
+    right: @margin-mobile-right;
     // display: none;
     width: 50px;
     height: 4px;
@@ -48,7 +49,8 @@
     content: "";
     position: absolute;
     top: 30px;
-    right: 20px;
+    // right: 20px;
+    right: @margin-mobile-right;
     display: none;
     width: 30px;
     height: 4px;
@@ -60,7 +62,8 @@
     content: "";
     position: absolute;
     top: 30px;
-    right: 20px;
+    // right: 20px;
+    right: @margin-mobile-right;
     display: none;
     width: 30px;
     height: 4px;
@@ -75,7 +78,10 @@
   // top: 70px;
   top: -4px;
   display: none;
-  width: 100%;
+  // width: calc(320*100%/310);
+  width: calc(100%);
+  // margin-left: @margin-full-width-mobile;
+  margin-left: @margin-mobile-left;
   text-align: center;
   color: white; //тоже пока временно
   background-color: @bg-dark;
@@ -147,8 +153,12 @@
 
   .main-nav__items {
     // display: block;
-    width: 126%;
-    margin-left: -13%;
+    // width: 126%;
+    // margin-left: -13%;
+    // width: 100%;
+    // margin-left: 0%;
+    width: @full-width-tablet;
+    margin-left: @margin-full-width-tablet;
   }
 
   .main-nav__items li:first-child {
