@@ -2,7 +2,7 @@
   outline: 1px solid #000000;
 }
 
-.container () {
+.container() {
   width: 320px;
   margin: 0 auto;
 
@@ -29,5 +29,23 @@
 
   @media @desktop-width {
     width: 78%;
+  }
+}
+
+.pink-uppercase() {
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.input-text() {
+  height: 63px;
+  border: 2px solid @light-grey;
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 15px 20px;
+
+  @media @tablet-width {
+    // padding: 23px 20px;
   }
 }

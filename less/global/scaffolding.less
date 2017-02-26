@@ -24,10 +24,16 @@ li,
 p,
 h1,
 h2,
-h3 {
+h3,
+fieldset,
+button,
+a,
+input {
   margin: 0;
   padding: 0;
+  border: none;
   list-style: none;
+  outline: none;
 }
 
 body {
@@ -44,6 +50,19 @@ body {
   line-height: 24px;
   font-weight: 700;
 
+  &--green {
+    padding: 16px;
+    width: 300px;
+    height: 63px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 4px;
+    background-color: #2aab6d;
+  }
+
   &--social {
     font-size: 0;
     width: 51px;
@@ -56,4 +75,8 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  cursor: pointer;
 }
