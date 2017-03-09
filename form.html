@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Пинк: конкурс</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -16,12 +17,7 @@
           <button class="main-nav__toggle  main-nav__toggle--open">Открыть меню</button>
           <button class="main-nav__toggle  main-nav__toggle--close">Закрыть меню</button>
           <ul class="main-nav__items">
-            <li class="main-nav__item">
-              <!-- <div class="main-nav__logo  main-nav__logo--white">
-                <img src="http://placehold.it/75x22" alt="">
-              </div> -->
-              <!-- <button class="main-nav__toggle  main-nav__toggle--close">Закрыть меню</button> -->
-            </li>
+            <li class="main-nav__item"></li>
             <li class="main-nav__item"><a href="index.html">Главная</a></li>
             <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
             <li class="main-nav__item  main-nav__item--active">Конкурс</li>
@@ -38,12 +34,6 @@
       <div class="form">
         <form class="competition" action="#" method="post">
           <fieldset class="competition__name">
-            <!-- <label for="surname">Фамилия:</label>
-            <input type="text" name="surname" id="surname" placeholder="Укажите фамилию">
-            <label for="name">Имя:</label>
-            <input type="text" name="name" id="name" placeholder="Введите ваше имя">
-            <label for="patronymic">Отчество:</label>
-            <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже"> -->
             <label for="surname">
               Фамилия:
               <input type="text" name="surname" id="surname" placeholder="Укажите фамилию">
@@ -58,20 +48,7 @@
             </label>
           </fieldset>
           <fieldset class="competition__achievement">
-            <!-- <p>Ваши безбашенные достижения в путешествии</p> -->
             <legend>Ваши безбашенные достижения в путешествии</legend>
-            <!-- <input type="checkbox" name="achievement" id="selfie" value="selfie" checked>
-            <label for="selfie">Сделал селфи с акулой</label>
-            <input type="checkbox" name="achievement" id="burnt" value="burnt" checked>
-            <label for="burnt">Обгорел на пляже</label>
-            <input type="checkbox" name="achievement" id="chuck-norris" value="chuck-norris">
-            <label for="chuck-norris">Видел Чака Норриса</label>
-            <input type="checkbox" name="achievement" id="present" value="present">
-            <label for="present">Накупил сувениров</label>
-            <input type="checkbox" name="achievement" id="tower" value="tower" checked>
-            <label for="tower">Удержал башню</label>
-            <input type="checkbox" name="achievement" id="hotel" value="hotel">
-            <label for="hotel">Разгромил отель</label> -->
             <div>
               <label for="selfie">
                 <input type="checkbox" name="achievement" id="selfie" value="selfie" checked>
@@ -101,10 +78,6 @@
           </fieldset>
           <fieldset class="competition__contacts">
             <legend>Контактная информация</legend>
-            <!-- <label for="tel">Номерок телефончика</label>
-            <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
-            <label for="email">Адресок почты</label>
-            <input type="email" name="email" id="email" placeholder="E-mail, пожалуйста"> -->
             <div>
               <label for="tel">
                 Номерок телефончика
@@ -117,14 +90,7 @@
             </div>
           </fieldset>
           <fieldset class="competition__app">
-            <!-- <p>С каким приложением путешествовали?</p> -->
             <legend>С каким приложением путешествовали?</legend>
-            <!-- <input type="radio" name="app" id="iOS" value="iOS" checked>
-            <label for="iOS">Pink для iOS</label>
-            <input type="radio" name="app" id="Android" value="Android">
-            <label for="Android">Pink на Android</label>
-            <input type="radio" name="app" id="Windows" value="Windows">
-            <label for="Windows">Windows Phone</label> -->
             <label for="iOS">
               <input type="radio" name="app" id="iOS" value="iOS" checked>
               Pink для iOS
@@ -139,7 +105,6 @@
             </label>
           </fieldset>
           <fieldset class="competition__emotions">
-            <!-- <p>Опишите свои эмоции</p> -->
             <legend>Опишите свои эмоции</legend>
             <textarea name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>

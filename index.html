@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>PINK</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -16,17 +17,10 @@
         <button class="main-nav__toggle  main-nav__toggle--open">Открыть меню</button>
         <button class="main-nav__toggle  main-nav__toggle--close">Закрыть меню</button>
           <ul class="main-nav__items">
-            <li class="main-nav__item">
-              <!-- <div class="main-nav__logo  main-nav__logo--white">
-                <img src="http://placehold.it/75x22" alt="">
-              </div> -->
-              <!-- <button class="main-nav__toggle  main-nav__toggle--close">Закрыть меню</button> -->
-            </li>
+            <li class="main-nav__item"></li>
             <li class="main-nav__item  main-nav__item--active">Главная</li>
             <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
             <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <!-- <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li> -->
             <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
           </ul>
         </div>
@@ -111,100 +105,33 @@
             <input class="slider__input" type="radio" name="price" id="price-3">
           </div>
           <div class="price__items">
-            <!-- <div class="slider__wrapper">
-              <input class="slider__input" type="radio" name="price" id="price-1">
-              <input class="slider__input" type="radio" name="price" id="price-2" checked>
-              <input class="slider__input" type="radio" name="price" id="price-3">
-            </div> -->
-            <ul class="price__items">
-              <li class="price__item  slider__item">
-                <table class="price__table-basic">
-                  <thead>
-                    <tr>
-                      <td class="price__tariff-item  price__tariff-item--basic">База 1,99USD</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="price__tariff-item  price__tariff-item--pink-filter  price__tariff--green-mark">Розовый фильтр</td>
-                    </tr>
-                    <tr>
-                      <td class="price__tariff-item  price__tariff-item--smiles  price__tariff--red-mark">Смайлики</td>
-                    </tr>
-                    <tr>
-                      <td class="price__tariff-item  price__tariff-item--comments  price__tariff--red-mark">Комментарии</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li class="price__item  slider__item">
-                <table class="price__table-standart">
-                  <thead>
-                    <tr>
-                      <td class="price__tariff-item  price__tariff-item--basic">Стандарт 3,99USD</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="price__tariff-item  price__tariff-item--pink-filter  price__tariff--green-mark">Розовый фильтр</td>
-                    </tr>
-                    <tr>
-                      <td class="price__tariff-item  price__tariff-item--smiles  price__tariff--green-mark">Смайлики</td>
-                    </tr>
-                    <tr>
-                      <td class="price__tariff-item  price__tariff-item--comments  price__tariff--red-mark">Комментарии</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-              <li class="price__item  slider__item">
-                <table class="price__table-unlimited">
-                  <thead>
-                    <tr>
-                      <td class="price__tariff-item  price__tariff-item--basic">Анлим 9,99USD</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="price__tariff-item  price__tariff-item--pink-filter  price__tariff--green-mark">Розовый фильтр</td>
-                    </tr>
-                    <tr>
-                      <td class="price__tariff-item  price__tariff-item--smiles  price__tariff--green-mark">Смайлики</td>
-                    </tr>
-                    <tr>
-                      <td class="price__tariff-item  price__tariff-item--comments  price__tariff--green-mark">Комментарии</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </li>
-            </ul>
             <table class="price__tariff-table">
               <thead>
                 <tr>
-                  <td class="price__tariff-empty"></td>
-                  <td class="price__tariff-item  price__tariff-item--basic">База 1,99USD</td>
-                  <td class="price__tariff-item  price__tariff-item--standart">Стандарт 3,99USD</td>
-                  <td class="price__tariff-item  price__tariff-item--unlimited">Анлим 9,99USD</td>
+                  <td class="price__tariff  price__tariff--column-1  price__tariff--empty"></td>
+                  <td class="price__tariff  price__tariff--column-2  price__tariff--basic"><span>База</span><br>1,99USD</td>
+                  <td class="price__tariff  price__tariff--column-3  price__tariff--standart"><span>Стандарт</span><br>3,99USD</td>
+                  <td class="price__tariff  price__tariff--column-4  price__tariff--unlimited"><span>Анлим</span><br>9,99USD</td>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="price__tariff-item  price__tariff-item--pink-filter">Розовый фильтр</td>
-                  <td class="price__tariff  price__tariff--green-mark">+</td>
-                  <td class="price__tariff  price__tariff--red-mark">-</td>
-                  <td class="price__tariff  price__tariff--red-mark">-</td>
+                  <td class="price__tariff  price__tariff--column-1  price__tariff--pink-filter">Розовый фильтр</td>
+                  <td class="price__tariff  price__tariff--column-2  price__tariff--green-mark"></td>
+                  <td class="price__tariff  price__tariff--column-3  price__tariff--green-mark"></td>
+                  <td class="price__tariff  price__tariff--column-4  price__tariff--green-mark"></td>
                 </tr>
                 <tr>
-                  <td class="price__tariff-item  price__tariff-item--smiles">Смайлики</td>
-                  <td class="price__tariff  price__tariff--green-mark">+</td>
-                  <td class="price__tariff  price__tariff--green-mark">+</td>
-                  <td class="price__tariff  price__tariff--red-mark">-</td>
+                  <td class="price__tariff  price__tariff--column-1  price__tariff--smiles">Смайлики</td>
+                  <td class="price__tariff  price__tariff--column-2  price__tariff--red-mark"></td>
+                  <td class="price__tariff  price__tariff--column-3  price__tariff--green-mark"></td>
+                  <td class="price__tariff  price__tariff--column-4  price__tariff--green-mark"></td>
                 </tr>
                 <tr>
-                  <td class="price__tariff-item  price__tariff-item--comments">Комментарии</td>
-                  <td class="price__tariff  price__tariff--green-mark">+</td>
-                  <td class="price__tariff  price__tariff--green-mark">+</td>
-                  <td class="price__tariff  price__tariff--green-mark">+</td>
+                  <td class="price__tariff  price__tariff--column-1  price__tariff--comments">Комментарии</td>
+                  <td class="price__tariff  price__tariff--column-2  price__tariff--red-mark"></td>
+                  <td class="price__tariff  price__tariff--column-3  price__tariff--red-mark"></td>
+                  <td class="price__tariff  price__tariff--column-4  price__tariff--green-mark"></td>
                 </tr>
               </tbody>
             </table>
@@ -235,26 +162,6 @@
     <!-- <footer class="page-footer"> -->
     <footer class="page-footer  page-footer--main">
       <div class="page-footer__wrapper">
-        <!-- <div class="contacts">
-          <p class="contacts__question">
-            Остались вопросы? Свяжитесь с нами!
-          </p>
-          <div class="contacts__items">
-            <div class="contacts__item">
-              <p class="contacts__title">Звоните:</p>
-              <p class="contacts__information"><a href="tel:+78125556666">+7 (812) 555-66-66</a></p>
-            </div>
-            <div class="contacts__item">
-              <p class="contacts__title">Пишите:</p>
-              <p class="contacts__information"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-            </div>
-            <div class="contacts__item">
-              <p class="contacts__title">Приезжайте в гости:</p>
-              <p class="contacts__information">ул. Большая Конюшенная, 19/8</p>
-            </div>
-          </div>
-          <div id="map" class="contacts__map"></div>
-        </div> -->
         <div class="page-footer__logo  page-footer__logo--black">
           <img src="http://placehold.it/147x40" alt="">
         </div>
