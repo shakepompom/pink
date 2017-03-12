@@ -10,14 +10,6 @@
   box-sizing: border-box;
 }
 
-.clearfix {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
 nav,
 ul,
 li,
@@ -37,7 +29,7 @@ input {
 }
 
 body {
-  background: #283645;
+  background: @bg-dark;
 }
 
 .btn {
@@ -45,36 +37,36 @@ body {
   padding: 12px;
   border: 3px solid white;
   border-radius: 30px;
-  background-color: pink;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  background-color: pink;
 
   &--green {
-    padding: 16px;
     width: 300px;
     height: 63px;
+    padding: 16px;
+    border-radius: 4px;
     font-size: 18px;
     line-height: 30px;
+    color: @white;
     font-weight: 700;
     text-transform: uppercase;
-    color: #ffffff;
-    border-radius: 4px;
     background-color: #2aab6d;
   }
 
   &--social {
-    font-size: 0;
     width: 51px;
     height: 51px;
-    border-radius: 50%;
     margin: 0 6px;
+    border-radius: 50%;
+    font-size: 0;
   }
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 button {

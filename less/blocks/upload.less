@@ -1,17 +1,15 @@
 .upload {
   .blocks-wrapper();
   .container-fluid();
-  // .clearfix();
+  padding-bottom: 20px;
   text-align: center;
   background: #f2f2f2;
-  padding-bottom: 20px;
 }
 
 .upload__description {
   padding: 31px 0 41px 0;
   line-height: 30px;
   background-color: #ffffff;
-  // text-align: center;
 }
 
 .upload__form {
@@ -27,21 +25,15 @@
 
 .upload__filter-wrapper {
   display: flex;
-  // flex-wrap: wrap;
   justify-content: center;
 }
 
 .upload__filter {
   display: inline-block;
-  // padding: 40px 16px;
   width: 44px;
   height: 85px;
-  padding-bottom: 41px;
   margin: 40px 16px 35px 16px;
-  // width: 44px;
-  // height: 44px;
-  // font-size: 0;
-  // border: 1px solid black;
+  padding-bottom: 41px;
 
   &::before {
     content: "";
@@ -58,10 +50,6 @@
 
 .upload__toggle {
   // display: none;
-  // margin: 34px 20px;
-  // width: 100%;
-  // height: 2px;
-  // background-color: #000000;
 }
 
 .upload .btn {
@@ -80,8 +68,8 @@
 
 @media @tablet-width {
   .upload__description {
-    font-size: 18px;
     padding: 58px 0 68px 0;
+    font-size: 18px;
   }
 
   .upload__form {
@@ -90,7 +78,6 @@
   }
 
   .upload__form img {
-    // float: left;
     width: 50%;
     height: auto;
     padding-right: 10px;
@@ -100,7 +87,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // float: right;
     width: 50%;
     padding-left: 10px;
   }
@@ -113,23 +99,14 @@
   .upload__filter {
     width: 100%;
     height: 73px;
-    // padding-bottom: 41px;
     margin: 0;
     padding: 0;
     outline: 1px solid yellow;
-    // margin: 40px 16px 35px 16px;
-    // width: 44px;
-    // height: 44px;
-    // font-size: 0;
-    // border: 1px solid black;
+  }
 
-    // &::before {
-    //   content: "";
-    //   display: block;
-    //   width: 44px;
-    //   height: 44px;
-    //   border: 1px solid black;
-    }
+  .upload__toggle {
+    display: inline-block;
+  }
 
   .upload__btn-wrapper {
     display: flex;
@@ -137,25 +114,12 @@
     flex-direction: column;
     justify-content: flex-end;
   }
-
-  .upload__submit {
-    // margin: 67px auto 24px auto;
-    // margin-bottom: 24px;
-  }
-
-  .upload__reset {
-    // margin: 0 auto;
-  }
-
-  .upload__toggle {
-    display: inline-block;
-  }
 }
 
 @media @desktop-width {
   .upload__form {
-    padding: 57px 80px;
     justify-content: space-between;
+    padding: 57px 80px;
   }
 
   .upload__form img {
@@ -174,21 +138,14 @@
   }
 
   .upload .btn {
-    // display: inline-block;
-    // width: 40%;
     width: 183px;
-    // display: inline-block;
   }
 
   .upload__submit {
-    // width: 183px;
-    // margin: 145px 0 0 0;
-    // margin-bottom: 24px;
     margin: 0;
   }
 
   .upload__reset {
-    // width: 183px;
     margin: 0;
   }
 }

@@ -1,28 +1,26 @@
 .advantages {
   .blocks-wrapper();
   .container-fluid();
-  background: #f2f2f2;
-  // margin: 0 auto;
-  // padding: 0 20px;
   text-align: center;
+  background: @bg-grey;
 }
 
 .advantages__question {
-  background: #ffffff;
-  font-size: 24px;
-  line-height: 32px;
   padding: 35px;//может понадобится
   padding-top: 40px;
+  font-size: 24px;
+  line-height: 32px;
+  background: @white;
 }
 
 .advantages__answer {
-  background: #ffffff;
-  font-size: 24px;
-  line-height: 32px;
-  // padding: 35px;//может понадобится
-  padding-top: 0;
   width: 215px;
   margin: 0 auto;
+  // padding: 35px;//может понадобится
+  padding-top: 0;
+  font-size: 24px;
+  line-height: 32px;
+  background: @white;
 }
 
 .advantages__items {
@@ -44,22 +42,14 @@
   font-weight: 700;
 }
 
-.advantages__description {
-  // font-size: 14px;
-  // line-height: 24px;
-  // font-weight: 400;
-}
-
 .advantages__item > img {
   display: none;
 }
 
 .advantages__item:last-child > img {
-  // position: relative;
-  // bottom: 0;
   display: block;
-  padding-top: 40px;
   margin: 0 auto;
+  padding-top: 40px;
 }
 
 .advantages__24-hours {
@@ -68,38 +58,35 @@
 
 @media @tablet-width {
   .advantages__question {
+    padding: 50px 0 0 0;
     font-size: 40px;
     line-height: 53px;
     font-weight: 200;
-    padding: 50px 0 0 0;
   }
 
   .advantages__answer {
+    width: 350px;
+    padding-bottom: 45px;
     font-size: 40px;
     line-height: 53px;
     font-weight: 200;
-    width: 350px;
-    padding-bottom: 45px;
   }
 
   .advantages__wrapper {
-    // .clearfix();
     position: relative;
     display: flex;
     outline: 1px solid green;
   }
 
   .advantages__items {
-    // float: right;
     width: 50%;
-    text-align: left;
     min-height: 469px;
     margin-left: auto;
+    text-align: left;
   }
 
   .advantages__item:last-child > img {
     position: absolute;
-    // top: 0;
     left: 0;
     bottom: 0;
     width: 268px;
@@ -110,27 +97,19 @@
   .advantages__24-hours {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 57px 0;
-    // .clearfix();
-  }
-
-  .advantages__24-hours > img {
-    // float: left;
+    align-items: center;
   }
 
   .advantages__24-hours-wrapper {
-    // float: right;
     width: 50%;
     text-align: left;
-    // padding: 45px 0;
   }
 
   .advantages__24-hours-title {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
-    // padding-bottom: 20px;
   }
 
   .advantages__24-hours-description {
@@ -140,40 +119,37 @@
 
 @media @desktop-width {
   .advantages__question {
+    padding-top: 77px;
     font-size: 50px;
     line-height: 66px;
-    // font-weight: 200;
-    padding-top: 77px;
   }
 
   .advantages__answer {
-    font-size: 50px;
-    line-height: 66px;
-    // font-weight: 200;
     width: 430px;
     padding-bottom: 70px;
+    font-size: 50px;
+    line-height: 66px;
   }
 
   .advantages__items {
     display: flex;
     justify-content: space-between;
-    // float: none;
     width: 100%;
-    text-align: center;
     padding: 0;
+    text-align: center;
   }
 
   .advantages__item {
+    position: relative;
     display: inline-block;
     width: 240px;
-    position: relative;
     padding-top: 330px;
   }
 
   .advantages__title {
+    padding: 26px 0;
     font-size: 30px;
     line-height: 30px;
-    padding: 26px 0;
   }
 
   .advantages__description {
@@ -182,20 +158,19 @@
   }
 
   .advantages__item > img {
-    // float: none;
-    display: block;
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -93px;
+    display: block;
     width: 186px;
     height: 301px;
+    margin-left: -93px;
   }
 
   .advantages__item:last-child > img {
+    left: 50%;
     width: 186px;
     height: 301px;
-    left: 50%;
     margin-left: -93px;
   }
 

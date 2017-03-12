@@ -1,14 +1,10 @@
-.main-nav {
-  // .container-fluid();
-}
-
 .main-nav__wrapper {
   .container-fluid();
+  position: relative;
+  top: 4px;
   display: flex;
   justify-content: space-between;
   outline: 1px solid yellow;
-  position: relative;
-  top: 4px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -20,99 +16,84 @@
 
 .main-nav__toggle {
   z-index: 2;
-  // position: relative;
-  margin-right: 0;
-  margin-top: 25px;
   width: 50px;
   height: 25px;
-  font-size: 0;
-  background-color: transparent;
+  margin-right: 0;
+  margin-top: 25px;
   border: none;
-  // display: none;
+  font-size: 0;
   cursor: pointer;
+  background-color: transparent;
 
   &--open::before {
     content: "";
     position: absolute;
     top: 25px;
-    // right: 20px;
     right: @margin-mobile-right;
-    // display: none;
     width: 50px;
     height: 4px;
-    background-color: #ffffff;
-    box-shadow: 0 10px 0 0 #ffffff,
-                0 20px 0 0 #ffffff;
+    box-shadow: 0 10px 0 0 @white,
+                0 20px 0 0 @white;
+    background-color: @white;
   }
 
   &--close::before {
     content: "";
     position: absolute;
     top: 30px;
-    // right: 20px;
     right: @margin-mobile-right;
     display: none;
     width: 30px;
     height: 4px;
-    background-color: #ffffff;
     transform: rotate(45deg);
+    background-color: @white;
   }
 
   &--close::after {
     content: "";
     position: absolute;
     top: 30px;
-    // right: 20px;
     right: @margin-mobile-right;
     display: none;
     width: 30px;
     height: 4px;
-    background-color: #ffffff;
     transform: rotate(-45deg);
+    background-color: @white;
   }
 }
 
 .main-nav__items {
   position: absolute;
-  z-index: 1;
-  // top: 70px;
   top: -4px;
+  z-index: 1;
   display: none;
-  // width: calc(320*100%/310);
   width: calc(100%);
-  // margin-left: @margin-full-width-mobile;
   margin-left: @margin-mobile-left;
   text-align: center;
-  color: white; //тоже пока временно
-  background-color: @bg-dark;
   font-size: 18px;
   line-height: 32px;
+  color: @white; //тоже пока временно
   font-weight: 700;
-}
-
-.main-nav__items li:first-child {
-  text-align: left;
-  height: 69px;
-  // margin-left: 20px;
-}
-
-.main-nav__items .main-nav__logo {
-  margin-top: 10px;
-}
-
-.main-nav__items a {
-  color: white; //временная мера
-  font-size: 18px;
-  line-height: 32px;
+  background-color: @bg-dark;
 }
 
 .main-nav__item {
   padding: 16px 0;
-  // outline: 1px solid green;
   font-size: 18px;
   line-height: 32px;
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15),
               inset 0 -1px 0 0 #000000;
+}
+
+.main-nav__item:first-child {
+  height: 69px;
+  text-align: left;
+}
+
+.main-nav__item a {
+  font-size: 18px;
+  line-height: 32px;
+  color: @white; //временная мера
 }
 
 @media @tablet-width {
@@ -122,7 +103,6 @@
 
   .main-nav__logo {
     margin: 27px 0 40px 0;
-    // margin-left: 0;
   }
 
   .main-nav__logo img {
@@ -135,55 +115,44 @@
       &--open::before {
         top: 44px;
         right: 0;
-        // display: none;
       }
 
       &--close::before {
         top: 52px;
         right: 0px;
-        // display: block;
       }
 
       &--close::after {
         top: 52px;
         right: 0px;
-        // display: block;
       }
     }
 
   .main-nav__items {
-    // display: block;
-    // width: 126%;
-    // margin-left: -13%;
-    // width: 100%;
-    // margin-left: 0%;
     width: @full-width-tablet;
     margin-left: @margin-full-width-tablet;
   }
 
-  .main-nav__items li:first-child {
-    // text-align: left;
+  .main-nav__item:first-child {
     height: 110px;
-    // margin-left: 20px;
   }
 }
 
 @media @desktop-width {
-  .main-nav__wrapper {
-    // min-height: 853px;
+  .main-nav__toggle {
+    display: none;
   }
 
   .main-nav__items {
     position: relative;
     top: 0;
     left: 0;
-    width: auto;
     display: flex;
     flex-wrap: wrap;
-    // float: right;
+    width: auto;
     min-height: 110px;
-    font-size: 0px;
     margin-left: 0px;
+    font-size: 0px;
     background-color: transparent;
   }
 
@@ -192,11 +161,7 @@
     padding: 40px;
   }
 
-  .main-nav__items li:first-child {
-    display: none;
-  }
-
-  .main-nav__toggle {
+  .main-nav__item:first-child {
     display: none;
   }
 }

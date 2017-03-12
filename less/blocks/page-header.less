@@ -1,34 +1,14 @@
 .page-header {
-  background: #283645 url("../img/bg-back-mobile.jpg") no-repeat center top;
-  outline: 1px solid red;
-  // .container-fluid();
   position: relative;
-  // min-height: 735px;
+  outline: 1px solid red;
+  background: @bg-dark url("../images/bg-back-mobile.jpg") no-repeat center top;
 }
 
 .page-header--inner {
   min-height: 420px;
 }
 
-@media @tablet-width {
-  .page-header {
-    // width: 700px;
-  }
-
-  .page-header--inner {
-    // min-height: 700px;
-  }
-}
-
 @media @desktop-width {
-  .page-header {
-    // width: 1200px;
-  }
-
-  .page-header--inner {
-    // min-height: 635px;
-  }
-
   .main-nav__item {
     box-shadow: none;
   }

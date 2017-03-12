@@ -1,21 +1,20 @@
 .modal-content {
   .blocks-wrapper();
-  background-color: #ffffff;
-  width: 100%;
   display: flex;
   justify-content: center;
-  // display: none;
+  width: 100%;
+  background-color: @white;
 }
 
 .modal-content__competition {
-  outline: 1px solid green;
   position: fixed;
   top: 50%;
   z-index: 2;
   width: 320px;
   padding: 0 20px;
   text-align: center;
-  background-color: #ffffff;
+  outline: 1px solid green;
+  background-color: @white;
 
   &--submit {
     display: none;
@@ -87,8 +86,8 @@
     &--submit {
       width: 775px;
       min-height: 363px;
-      padding: 0 162px;
       margin-top: -190px;
+      padding: 0 162px;
     }
 
     &--mistake {

@@ -1,10 +1,10 @@
 .competition {
   .blocks-wrapper();
   .container-fluid();
-  background: #ffffff;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background: @white;
 }
 
 .competition label {
@@ -13,7 +13,7 @@
 
 .competition__name {
   margin-bottom: 23px;
-  background: #ffffff;
+  background: @white;
 }
 
 .competition__name label {
@@ -27,8 +27,8 @@
 }
 
 .competition__achievement {
-  background: #f2f2f2;
   padding-bottom: 5px;
+  background: @bg-grey;
 }
 
 .competition__achievement legend {
@@ -38,8 +38,8 @@
 }
 
 .competition__achievement label {
-  padding-left: 70px;
   margin-bottom: 43px;
+  padding-left: 70px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -50,7 +50,7 @@
 
 .competition__contacts {
   padding: 35px 0;
-  background: #ffffff;
+  background: @white;
 }
 
 .competition__contacts legend {
@@ -70,8 +70,8 @@
 }
 
 .competition__app {
-  background: #f2f2f2;
   margin-bottom: 5px;
+  background: @bg-grey;
 }
 
 .competition__app legend {
@@ -81,8 +81,8 @@
 }
 
 .competition__app label {
-  padding-left: 70px;
   margin-bottom: 35px;
+  padding-left: 70px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -93,7 +93,7 @@
 
 .competition__emotions {
   margin-bottom: 25px;
-  background: #ffffff;
+  background: @white;
   }
 
 .competition__emotions legend {
@@ -104,38 +104,38 @@
 
 .competition__emotions textarea {
   .input-text();
-  height: 200px;
   width: 100%;
+  height: 200px;
   margin: 10px 0 20px 0;
   resize: none;
-}
-
-.competition p {
-  margin: 38px 0 16px 0;
-  text-align: center;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
-.competition span {
-  .pink-uppercase();
 }
 
 .competition__submit {
   margin: 0 auto;
 }
 
+.competition__footer p {
+  margin: 38px 0 16px 0;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.competition__footer span {
+  .pink-uppercase();
+}
+
 @media @tablet-width {
   .competition__name {
     order: 1;
     margin-bottom: 23px;
-    background: #ffffff;
+    background: @white;
   }
 
   .competition__name label {
+    .pink-uppercase();
     display: flex;
     align-items: baseline;
-    .pink-uppercase();
 
     &:last-child input {
       margin-bottom: 0;
@@ -171,19 +171,16 @@
 
   .competition__contacts {
     order: 3;
-    padding-bottom: 25px;
     margin: 0 60px;
     margin-bottom: 20px;
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
+    padding-bottom: 25px;
   }
 
   .competition__contacts legend {
     display: block;
+    padding-top: 25px; // или 60px
     font-size: 14px;
     line-height: 30px;
-    padding-top: 25px; // или 60px
   }
 
   .competition__contacts label {
@@ -200,12 +197,12 @@
     order: 4;
   }
 
-  .competition__achievement label {
-    padding-left: 60px;
-  }
-
   .competition__achievement legend {
     padding-bottom: 40px;
+  }
+
+  .competition__achievement label {
+    padding-left: 60px;
   }
 
   .competition__emotions {
@@ -214,8 +211,8 @@
   }
 
   .competition__emotions textarea {
-    padding: 23px 20px;
     margin-bottom: 52px;
+    padding: 23px 20px;
   }
 
   .competition__footer {
@@ -230,8 +227,7 @@
     margin: 0;
   }
 
-  .competition p {
-    // order: 7;
+  .competition__footer p {
     margin: 0;
   }
 }
@@ -246,7 +242,6 @@
     width: calc(433*100%/940);
     margin-right: 35px;
     margin-bottom: 25px;
-    // width: 50%;
   }
 
   .competition__app {
@@ -265,27 +260,17 @@
 
   .competition__contacts {
     width: 100%;
-    // display: flex;
-    // flex-wrap: nowrap;
-    // justify-content: space-between;
   }
 
   .competition__contacts div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    // width: 100%;
   }
 
   .competition__contacts label {
     width: calc(375*100%/820);
-    // margin: 0;
     margin-bottom: 23px;
-    // display: inline-block;
-  }
-
-  .competition__contacts input {
-    // width: 100%;
   }
 
   .competition__achievement {
@@ -306,7 +291,6 @@
 
   .competition__achievement label {
     width: calc(260*100%/820);
-    // display: block;
   }
 
   .competition__emotions {
