@@ -6,12 +6,25 @@
     <title>PINK</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
+
+  <!-- <script src="http://pixp.fdrv.guru/pixp.js" type="text/javascript"></script> -->
+  <!-- pixelperfect/pink-index-mobile.jpg -->
+  <!-- pixelperfect/pink-index-mobile-menu-closed.jpg -->
+  <!-- pixelperfect/pink-index-mobile-menu-opened.jpg -->
+  <!-- pixelperfect/pink-index-tablet-menu-opened.jpg -->
+  <!-- pixelperfect/pink-index-tablet.jpg -->
+  <!-- pixelperfect/pink-index-desktop.jpg -->
+
   <body>
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
         <div class="main-nav__logo  main-nav__logo--white">
-          <img src="http://placehold.it/75x22" alt="">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="images/logo-pink-white-desktop.svg">
+            <source media="(min-width: 700px)" srcset="images/logo-pink-white-tablet.svg">
+            <img src="images/logo-pink-white-mobile.svg" width="75" height="22" alt="">
+          </picture>
         </div>
         <button class="main-nav__toggle  main-nav__toggle--open">Открыть меню</button>
         <button class="main-nav__toggle  main-nav__toggle--close">Закрыть меню</button>
@@ -24,14 +37,19 @@
           </ul>
         </div>
       </nav>
+      <picture>
+        <source media="(min-width:1200px)" srcset="../images/iphone-hand-desktop@1x.png 1x, ../images/iphone-hand-desktop@2x.png 2x">
+        <source media="(min-width:700px)" srcset="../images/iphone-hand-tablet@1x.png 1x, ../images/iphone-hand-tablet@2x.png 2x">
+        <img class="page-header__iphone-hand" src="../images/iphone-hand-mobile.png" srcset="../images/iphone-hand-mobile@2x.png 2x" alt="">
+      </picture>
       <div class="download">
         <div class="download__wrapper">
           <p class="download__slogan">Взгляните на жизнь иначе!</p>
           <a class="btn  download__btn" href="#">Скачать приложение</a>
           <ul class="download__items">
-            <li class="download__item"><a href="#"><img src="http://placehold.it/47x57" alt="">iTunes</a></li>
-            <li class="download__item"><a href="#"><img src="http://placehold.it/43x47" alt="">Google Market</a></li>
-            <li class="download__item"><a href="#"><img src="http://placehold.it/44x41" alt="">Windows Market</a></li>
+            <li class="download__item"><a href="#"><img src="../images/logo-apple.svg" width="47" height="56" alt="">iTunes</a></li>
+            <li class="download__item"><a href="#"><img src="../images/logo-android.svg" width="43" height="47" alt="">Google Market</a></li>
+            <li class="download__item"><a href="#"><img src="../images/logo-microsoft.svg" width="44" height="41" alt="">Windows Market</a></li>
           </ul>
           <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>

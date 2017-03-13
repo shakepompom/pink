@@ -7,6 +7,11 @@
   text-align: center;
 }
 
+.download__wrapper {
+  position: relative;
+  z-index: 3;
+}
+
 .download__slogan {
   display: none;
   margin: 0 auto;
@@ -19,9 +24,19 @@
   background-color: @bg-dark;
 }
 
+.download__items {
+  height: 56px;
+  margin: 30px auto 25px auto;
+}
+
 .download__item {
   display: inline-block;
-  padding: 30px 15px 25px 15px;
+  margin-right: 35px;
+  // padding: 30px 15px 25px 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .download__item a {
@@ -39,8 +54,8 @@
     width: 300px;
     margin-top: 0px;
     margin-left: calc(11%/2);
-    padding: 100px 0 110px 0;
-    outline: 1px solid blue;
+    padding: 95px 0 110px 0;
+    // outline: 1px solid blue;
   }
 
   .download__slogan {
@@ -48,17 +63,26 @@
     width: 210px;
     margin-bottom: 35px;
     font-size: 40px;
-    line-height: 53px;
+    line-height: 47px;
     font-weight: 200;
   }
 
   .download__btn {
-    width: 320px;
+    width: 100%;
     background-color: transparent;
   }
 
+  .download__items {
+    margin: 45px auto 35px auto;
+  }
+
   .download__item {
-    padding: 40px 15px 35px 15px;
+    // padding: 40px 15px 35px 15px;
+  }
+
+  .download__description {
+    padding: 0;
+    font-size: 18px;
   }
 }
 
@@ -67,14 +91,20 @@
     bottom: 165px;
     left: 130px;
     margin-left: calc(22%/2);
-    padding: 120px 0;
+    padding: 110px 0 120px 0;
   }
 
   .download__slogan {
-    margin-bottom: 60px;
+    margin-bottom: 55px;
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .download__items {
+    margin: 65px auto 55px auto;
   }
 
   .download__item {
-    padding: 65px 15px 60px 15px;
+    // padding: 65px 15px 60px 15px;
   }
 }

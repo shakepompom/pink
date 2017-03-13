@@ -1,15 +1,47 @@
 .page-header {
   position: relative;
-  outline: 1px solid red;
+  // outline: 1px solid red;
   background: @bg-dark url("../images/bg-back-mobile.jpg") no-repeat center top;
+
+  @media @retina {
+    background-image: url("../images/bg-back-mobile@2x.jpg");
+    background-size: 700px auto;
+  }
+}
+
+.page-header__iphone-hand {
+  position: absolute;
+  top: 176px;
+  left: 0;
 }
 
 .page-header--inner {
   min-height: 420px;
 }
 
+@media @tablet-width {
+  .page-header {
+    background-image: url("../images/bg-back-tablet@1x.jpg");
+
+    @media @retina {
+      background-image: url("../images/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
+  .page-header__iphone-hand {
+    top: 184px;
+    left: 0;
+  }
+}
+
 @media @desktop-width {
-  .main-nav__item {
-    box-shadow: none;
+  .page-header {
+    background-image: url("../images/bg-back-desktop.jpg");
+  }
+
+  .page-header__iphone-hand {
+    top: 209px;
+    left: 150px;
   }
 }
