@@ -1,15 +1,16 @@
 .advantages {
-  .blocks-wrapper();
+  // .blocks-wrapper();
   .container-fluid();
   text-align: center;
-  background: @bg-grey;
+  background: @white;
 }
 
 .advantages__question {
-  padding: 35px;//может понадобится
-  padding-top: 40px;
+  padding: 35px;
+  padding-bottom: 25px;
   font-size: 24px;
   line-height: 32px;
+  font-weight: 200;
   background: @white;
 }
 
@@ -18,17 +19,45 @@
   margin: 0 auto;
   // padding: 35px;//может понадобится
   padding-top: 0;
+  padding-bottom: 30px;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 30px;
+  font-weight: 200;
   background: @white;
 }
 
+.advantages__triangle-white {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 30px;
+  margin-left: @margin-full-width-mobile;
+}
+
+.advantages__triangle-white svg {
+  width: 100%;
+  height: 30px;
+}
+
+.advantages__triangle-white polygon {
+  fill: @white;
+}
+
+.advantages__wrapper {
+//   position: relative;
+  width: @full-width-mobile;
+  margin-left: @margin-full-width-mobile;
+  padding: 0 20px;
+  background: @bg-grey;
+}
+
 .advantages__items {
-  padding-top: 75px;
+  padding-top: 80px;
 }
 
 .advantages__item {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  overflow: hidden;
 
   &:last-child {
     margin-bottom: 0;
@@ -36,7 +65,7 @@
 }
 
 .advantages__title {
-  padding: 15px 0;
+  padding-bottom: 15px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -52,52 +81,85 @@
   padding-top: 40px;
 }
 
+.page-header__iphone-screen {
+  position: relative;
+  top: 50px;
+}
+
 .advantages__24-hours {
   display: none;
 }
 
 @media @tablet-width {
   .advantages__question {
-    padding: 50px 0 0 0;
+    padding: 45px 0 0 0;
     font-size: 40px;
     line-height: 53px;
-    font-weight: 200;
   }
 
   .advantages__answer {
     width: 350px;
     padding-bottom: 45px;
     font-size: 40px;
-    line-height: 53px;
-    font-weight: 200;
+    line-height: 48px;
+  }
+
+  .advantages__triangle-white {
+    height: 55px;
+    margin-left: @margin-full-width-tablet;
+  }
+
+  .advantages__triangle-white svg {
+    height: 55px;
   }
 
   .advantages__wrapper {
     position: relative;
-    display: flex;
-    outline: 1px solid green;
+    // display: flex;
+    width: @full-width-tablet;
+    margin-left: @margin-full-width-tablet;
+    padding: 0 40px;
+    // outline: 1px solid green;
   }
 
   .advantages__items {
-    width: 50%;
+    position: relative;
+    // width: 50%;
     min-height: 469px;
-    margin-left: auto;
+    // margin-left: auto;
+    padding: 75px 0 40px 310px;
+    // padding-top: 75px;
+    // padding-left: 310px;
+    // padding-bottom: 35px;
     text-align: left;
+    overflow: hidden;
   }
 
-  .advantages__item:last-child > img {
+  .advantages__item {
+    margin-bottom: 35px;
+  }
+
+  .advantages__title {
+    padding-bottom: 10px;
+  }
+
+  // .advantages__item:last-child > img
+  .page-header__iphone-screen {
     position: absolute;
     left: 0;
-    bottom: 0;
-    width: 268px;
-    height: 481px;
-    padding: 0;
+    // bottom: 0;
+    top: 0;
+    z-index: 3;
+    // width: 268px;
+    // height: 481px;
+    // padding: 0;
   }
 
   .advantages__24-hours {
     display: flex;
     justify-content: space-between;
-    padding: 57px 0;
+    padding-top: 65px;
+    padding-bottom: 57px;
     align-items: center;
   }
 
@@ -107,21 +169,28 @@
   }
 
   .advantages__24-hours-title {
+    padding-top: 5px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
   }
 
   .advantages__24-hours-description {
-    padding: 20px 0;
+    padding: 10px 0;
+    padding-right: 15px;
+  }
+
+  .advantages__24-hours a {
+    color: @pink;
+    text-decoration: underline;
   }
 }
 
 @media @desktop-width {
   .advantages__question {
-    padding-top: 77px;
+    padding-top: 70px;
     font-size: 50px;
-    line-height: 66px;
+    line-height: 58px;
   }
 
   .advantages__answer {
@@ -131,11 +200,26 @@
     line-height: 66px;
   }
 
+  .advantages__triangle-white {
+    height: 90px;
+    margin-left: @margin-full-width-desktop;
+  }
+
+  .advantages__triangle-white svg {
+    height: 90px;
+  }
+
+  .advantages__wrapper {
+    width: @full-width-desktop;
+    margin-left: @margin-full-width-desktop;
+    padding: 0 130px;
+  }
+
   .advantages__items {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0;
+    padding: 0 20px;
     text-align: center;
   }
 
@@ -157,21 +241,14 @@
     line-height: 30px;
   }
 
-  .advantages__item > img {
+  .page-header__iphone-screen {
     position: absolute;
     top: 0;
-    left: 50%;
-    display: block;
-    width: 186px;
-    height: 301px;
-    margin-left: -93px;
+    left: -20px;
   }
 
-  .advantages__item:last-child > img {
-    left: 50%;
-    width: 186px;
-    height: 301px;
-    margin-left: -93px;
+  .advantages__24-hours {
+    padding-top: 30px;
   }
 
   .advantages__24-hours > img {
@@ -180,12 +257,20 @@
   }
 
   .advantages__24-hours-wrapper {
-    width: 56%;
+    width: 59%;
     margin-right: 25px;
   }
 
+  .advantages__24-hours-title {
+    padding-top: 45px;
+  }
+
+  .advantages__24-hours-title br {
+    display: none;
+  }
+
   .advantages__24-hours-description {
-    padding: 25px 0 40px 0;
+    padding: 25px 0 30px 0;
     font-size: 18px;
     line-height: 30px;
   }
