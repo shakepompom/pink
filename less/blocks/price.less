@@ -1,8 +1,13 @@
 .price {
-  .blocks-wrapper();
-  .container-fluid();
+  // .blocks-wrapper();
+  // .container-fluid();
+  padding-bottom: 35px;
   overflow: hidden;
-  background: #f2f2f2;
+  // background: @bg-grey;
+  // width: @full-width-mobile;
+  // margin-left: @margin-full-width-mobile;
+  padding: 0 20px;
+  background: @bg-grey;
 }
 
 .price__wrapper {
@@ -10,10 +15,15 @@
   flex-direction: column-reverse;
   width: 280px;
   margin: 0 auto;
+  // width: @full-width-mobile;
+  // margin-left: @margin-full-width-mobile;
+  // padding: 0 20px;
+  // background: @bg-grey;
 }
 
 .price__items {
-  padding: 10px 0;
+  padding-top: 90px;
+  padding-bottom: 40px;
 }
 
 .price__tariff-table {
@@ -28,11 +38,11 @@
 .price__tariff-table td {
   width: 280px;
   height: 61px;
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
+  border-bottom: 2px solid @grey;
+  border-left: 2px solid @grey;
 
   &:last-child {
-    border-right: 2px solid black;
+    border-right: 2px solid @grey;
   }
 }
 
@@ -41,12 +51,16 @@
 }
 
 .price__tariff-table thead td {
+  position: relative;
+  z-index: 2;
   height: 100px;
   padding-top: 19px;
   border-bottom: none;
   font-size: 24px;
   line-height: 30px;
+  color: @white;
   font-weight: 200;
+  background: @bg-dark;
 }
 
 .price__tariff-table thead span {
@@ -59,7 +73,9 @@
   padding: 15px 23px;
   font-size: 14px;
   line-height: 30px;
+  color: @bg-dark;
   font-weight: 400;
+  background: @white;
 }
 
 .price__tariff {
@@ -70,9 +86,11 @@
     position: absolute;
     top: 20px;
     right: 17px;
+    z-index: 2;
     width: 31px;
     height: 21px;
-    background-color: green;
+    background: green url("../images/icon-yes-green.svg");
+    background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAVCAMAAACJ68VtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEU9xkT///89xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQAAAAn3b/jAAAAEHRSTlMAABDPMO+/n2CPIIBwUEDfcVDfaAAAAAFiS0dEEeK1PboAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAxAXMjNNvM9aAAAAjElEQVQoz3XRUQ6EIAwE0GlBZNVde//TLrQaQSgJH+RNAh2A16JncZAA32MQEd/jUji5rryy58ZEjt/seJaL5678Ic+Vs12Ebd9e3jKhPCR3frRM0FPja8eE3AcqL9+nZPQB5UitW2Cfs85nbQCcBrb5f/YXYeSrH6277sA0cwtUxtwtUNhzxFMSY/A/MpUIvCJBHE4AAAAASUVORK5CYII=);
   }
 
   &--red-mark::before {
@@ -80,27 +98,63 @@
     position: absolute;
     top: 15px;
     right: 19px;
+    z-index: 2;
     width: 27px;
     height: 27px;
-    background-color: red;
+    // background: red url("../images/icon-no-red.svg");
+    background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAaBAMAAAC0pjrDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEXyWyb////yWybyWybyWybyWybyWybyWybyWybyWybyWybyWyYAAAASNBWXAAAAC3RSTlMAAM8QIL/vMJ9gcDfkjogAAAABYktHRAyBs1FjAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QMQFzMA63efDQAAAJRJREFUGNN1kCELAkEQhV/zbA4K1gNtW0TwNxksJrvZosViMlvk4OTk/Tl3Z86DGbhtH98wO+8hraBPROapBpvNH7d8I3Hd4yKxxo6fo+GJbR68cK+4PPA8AyrTWXaSsddFKpouUlH1pEjDrK/3Ig3xYkc+B5yS/MqAeJC3UQzDflX4yJ8RjvQRQkAfP5QTqovFutp/3YRZL/xFT7IAAAAASUVORK5CYII=);
   }
 }
 
 .price__tariff-table .price__tariff--column-1 {
   position: absolute;
+  z-index: 2;
 }
 
 .price__tariff--column-2 {
   margin-left: -280px;
 }
 
+.price__tariff--standart {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 74px;
+    height: 73px;
+    background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABJCAMAAACtmkDtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABpFBMVEUAAADSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFYAAAAFTzxhAAAAinRSTlMAATKp9v7NVggdu+ZJG5r04mcMxNE/AqBjNrT9ykoSsfBRJ53z1w0qwNhCCfsFN75B+FkwpPXPWwogvEYWmOdoM8LOBKJhNa/5y1AXtetNItxlL8HVQAOeZkStLNNdJb3dQxGZ7cMGpl6s91S56ZvhZFNi2wfjRQs9YE/a1lfg6mnMX1JL3tLJ1PpSKofHAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAixJREFUWMOt2HtT00AUBfBATYsgLYWSVrYIalvAVgSUh4JQWqnGB+ADjQg+EbUKVsEnoojvfGpnmOGPztB7ztLcD/Cbs5vc3ZsYhlQ1tb4DLlOmP1AnSsbBegpy3YZDMmQ0BkOc1BRulqXaFjJTpBVksqKk5MYAdLhNUY6Kt1sydaSDjNR5FKzu2PEEJyVjKVnq6iYz9ZwAmdLBDCeFwidlqfcUmSnehzL5SKl/AEinzwxy0tDwiCydPUdmahoFmcbOc2eBOz4BMmUnyUw51Hf5C6RkTsmQVbh4iYKUfRm8T1eukpmuTYPVzQTJvpu9Dvruxk0y0605kOn2HVLKOPL5ZPXWk48ufhdkSs2TmQYDQLoXJXd8YRHcLfcfkJkePgKZHj/p56QlJy1LhadkJj/qu+VnpGQ+lyEr+6JIQcr/EkwYja/ITCvtYHXGKjlhvA6nEEVmWkA7zlMlLFGUskdrPKISbwiIopJv4Y6T1BrqO5pKTKx7RNno9KWpzDAtyZQ5NDDiEfXuPQ/JVIPzwSMq91EHEqlPelJFStnTeY+opc+aUEVqo8T1Haa+9GlDFaiio7tPlag4exZAqri5L2kPKrKo9Y4L1FetvpOob1saZ4FIfSfuO45S2/uXyihl/1j2iFr5WQVURv1y9Ptub+o3f7cAyixVKe1S6g/65qQpcsIgqL9TzR5R9IQBqU56wkCUxoQBqH8aE4ZYZm4zXb2yU+Po3yFf6N8hX/8BI352Z6q/2McAAAAASUVORK5CYII=);
+  }
+}
+
+.price__tariff-table .price__hit {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  transform: rotate(-45deg);
+}
+
 @media @tablet-width {
+  .price {
+    // width: @full-width-tablet;
+    // margin-left: @margin-full-width-tablet;
+    padding: 0 40px;
+    // background: @bg-grey;
+  }
   .price .slider__wrapper {
     display: none;
   }
 
   .price__wrapper {
     width: 100%;
+  }
+
+  .price__items {
+    padding-bottom: 70px;
   }
 
   .price__tariff-table {
@@ -113,12 +167,12 @@
 
   .price__tariff-table td {
     width: 25%;
-    height: 49px;
+    height: 45px;
   }
 
   .price__tariff-table thead td {
     height: 79px;
-    padding-top: 14px;
+    padding-top: 0;
     font-size: 18px;
   }
 
@@ -127,18 +181,13 @@
   }
 
   .price__tariff-table tbody td {
-    padding: 10px 15px;
+    padding: 0px 15px;
   }
 
   .price__tariff-table tbody tr {
     &:first-child {
-      border-top: 2px solid black;
+      border-top: 2px solid @grey;
     }
-  }
-
-  .price__tariff-table .price__tariff--column-1 {
-    position: relative;
-    text-transform: none;
   }
 
   .price__tariff {
@@ -154,11 +203,44 @@
       margin-left: -13px;
     }
   }
+
+  .price__tariff-table .price__tariff--column-1 {
+    position: relative;
+    text-transform: none;
+  }
+
+  .price__tariff-table .price__tariff--empty {
+    background: transparent;
+  }
+
+  .price__tariff--standart {
+
+    &::before {
+      left: 0;
+      width: 61px;
+      height: 61px;
+      background-size: cover;
+    }
+  }
+
+  .price__tariff-table .price__hit {
+    top: 8px;
+    left: 8px;
+  }
 }
 
 @media @desktop-width {
+  .price {
+    padding: 0 130px;
+  }
+
+  .price__items {
+    padding-top: 150px;
+    padding-bottom: 90px;
+  }
+
   .price__tariff-table td {
-    height: 63px;
+    height: 60px;
   }
 
   .price__tariff-table thead td {
@@ -172,7 +254,6 @@
   }
 
   .price__tariff-table tbody td {
-    padding: 15px 24px;
     font-size: 18px;
   }
 
