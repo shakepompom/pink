@@ -1,5 +1,5 @@
 .contacts {
-  .blocks-wrapper();
+  // .blocks-wrapper();
   .container-fluid();
   text-align: center;
   background: @white;
@@ -8,9 +8,9 @@
 .contacts__question {
   width: 280px;
   margin: 0 auto;
-  padding: 45px 0 40px 0;
+  padding: 40px 0 20px 0;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 28px;
   font-weight: 200;
 }
 
@@ -22,7 +22,8 @@
 
 .contacts__item {
   padding: 13px 0;
-  outline: 1px solid green;
+  padding-bottom: 9px;
+  // outline: 1px solid green;
 }
 
 .contacts__title {
@@ -35,37 +36,46 @@
 .contacts__information a {
   font-size: 24px;
   line-height: 32px;
+  color: @pink;
   font-weight: 200;
 }
 
 .contacts__map {
+  position: relative;
+  top: 2px;
   width: @full-width-mobile;
   height: 200px;
   margin-left: @margin-full-width-mobile;
-  outline: 1px solid yellow;
+  // outline: 1px solid yellow;
 }
 
 @media @tablet-width {
   .contacts__question {
     width: 400px;
-    padding: 56px 0 30px 0;
+    padding: 45px 0 15px 0;
     font-size: 40px;
-    line-height: 53px;
+    line-height: 50px;
   }
 
   .contacts__items {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 0;
   }
 
   .contacts__item {
     width: 48%;
     padding: 27px 4%;
+
+    &:last-child {
+      padding-top: 17px;
+      padding-bottom: 20px;
+    }
   }
 
   .contacts__title {
-    margin-bottom: 7px;
+    margin-bottom: 3px;
   }
 
   .contacts__map {
@@ -78,9 +88,9 @@
 @media @desktop-width {
   .contacts__question {
     width: 480px;
-    padding: 76px 0 50px 0;
+    padding: 60px 0 40px 0;
     font-size: 50px;
-    line-height: 66px;
+    line-height: 62px;
   }
 
   .contacts__items {
@@ -90,14 +100,19 @@
   .contacts__item {
     width: 300px;
     padding: 20px 20px;
+    // padding-bottom: 15px;
 
     &:nth-child(2) {
       order: 2;
     }
+
+    &:last-child {
+      // padding-bottom: 15px;
+    }
   }
 
   .contacts__title {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
   }
 
   .contacts__map {

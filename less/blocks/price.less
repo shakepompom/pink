@@ -1,12 +1,6 @@
 .price {
-  // .blocks-wrapper();
-  // .container-fluid();
-  padding-bottom: 35px;
-  overflow: hidden;
-  // background: @bg-grey;
-  // width: @full-width-mobile;
-  // margin-left: @margin-full-width-mobile;
   padding: 0 20px;
+  overflow: hidden;
   background: @bg-grey;
 }
 
@@ -15,14 +9,11 @@
   flex-direction: column-reverse;
   width: 280px;
   margin: 0 auto;
-  // width: @full-width-mobile;
-  // margin-left: @margin-full-width-mobile;
-  // padding: 0 20px;
-  // background: @bg-grey;
+  padding-top: 90px;
+  padding-bottom: 40px;
 }
 
 .price__items {
-  padding-top: 90px;
   padding-bottom: 40px;
 }
 
@@ -89,7 +80,6 @@
     z-index: 2;
     width: 31px;
     height: 21px;
-    background: green url("../images/icon-yes-green.svg");
     background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAVCAMAAACJ68VtAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEU9xkT///89xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQ9xkQAAAAn3b/jAAAAEHRSTlMAABDPMO+/n2CPIIBwUEDfcVDfaAAAAAFiS0dEEeK1PboAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAxAXMjNNvM9aAAAAjElEQVQoz3XRUQ6EIAwE0GlBZNVde//TLrQaQSgJH+RNAh2A16JncZAA32MQEd/jUji5rryy58ZEjt/seJaL5678Ic+Vs12Ebd9e3jKhPCR3frRM0FPja8eE3AcqL9+nZPQB5UitW2Cfs85nbQCcBrb5f/YXYeSrH6277sA0cwtUxtwtUNhzxFMSY/A/MpUIvCJBHE4AAAAASUVORK5CYII=);
   }
 
@@ -101,7 +91,6 @@
     z-index: 2;
     width: 27px;
     height: 27px;
-    // background: red url("../images/icon-no-red.svg");
     background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAaBAMAAAC0pjrDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEXyWyb////yWybyWybyWybyWybyWybyWybyWybyWybyWybyWyYAAAASNBWXAAAAC3RSTlMAAM8QIL/vMJ9gcDfkjogAAAABYktHRAyBs1FjAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QMQFzMA63efDQAAAJRJREFUGNN1kCELAkEQhV/zbA4K1gNtW0TwNxksJrvZosViMlvk4OTk/Tl3Z86DGbhtH98wO+8hraBPROapBpvNH7d8I3Hd4yKxxo6fo+GJbR68cK+4PPA8AyrTWXaSsddFKpouUlH1pEjDrK/3Ig3xYkc+B5yS/MqAeJC3UQzDflX4yJ8RjvQRQkAfP5QTqovFutp/3YRZL/xFT7IAAAAASUVORK5CYII=);
   }
 }
@@ -140,21 +129,20 @@
 
 @media @tablet-width {
   .price {
-    // width: @full-width-tablet;
-    // margin-left: @margin-full-width-tablet;
     padding: 0 40px;
-    // background: @bg-grey;
   }
+
   .price .slider__wrapper {
     display: none;
   }
 
   .price__wrapper {
     width: 100%;
+    padding-bottom: 70px;
   }
 
   .price__items {
-    padding-bottom: 70px;
+    padding-bottom: 0;
   }
 
   .price__tariff-table {
@@ -217,15 +205,15 @@
 
     &::before {
       left: 0;
-      width: 61px;
-      height: 61px;
+      width: 57px;
+      height: 57px;
       background-size: cover;
     }
   }
 
   .price__tariff-table .price__hit {
-    top: 8px;
-    left: 8px;
+    top: 6px;
+    left: 6px;
   }
 }
 
@@ -234,9 +222,9 @@
     padding: 0 130px;
   }
 
-  .price__items {
+  .price__wrapper {
     padding-top: 150px;
-    padding-bottom: 90px;
+    padding-bottom: 95px;
   }
 
   .price__tariff-table td {
@@ -245,7 +233,6 @@
 
   .price__tariff-table thead td {
     height: 100px;
-    padding-top: 5px;
     font-size: 24px;
   }
 
@@ -265,5 +252,18 @@
     &--red-mark::before {
       top: 16px;
     }
+  }
+
+  .price__tariff--standart {
+
+    &::before {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .price__tariff-table .price__hit {
+    top: 10px;
+    left: 10px;
   }
 }
