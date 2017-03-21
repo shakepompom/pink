@@ -18,18 +18,24 @@
 .page-footer__logo {
   margin-top: 40px;
 
-  // &--html-academy {
-  //   display: inline-block;
-  //   width: 27px;
-  //   height: 34px;
-  //   margin: 0;
-  // }
+  &--html-academy {
+    display: inline-block;
+    width: 27px;
+    height: 34px;
+    margin-top: 0;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+}
+
+.page-footer__logo--html-academy path {
+  fill: @pink;
 }
 
 .page-footer__social {
   display: flex;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .page-footer__copyrights {
@@ -68,17 +74,10 @@
     margin-top: 36px;
 
     &--html-academy {
-      display: inline-block;
       width: 27px;
       height: 34px;
       margin-top: 0;
-      margin-left: 10px;
-      vertical-align: middle;
     }
-  }
-
-  .page-footer__logo--html-academy path {
-    fill: @pink;
   }
 
   .page-footer__copyrights {

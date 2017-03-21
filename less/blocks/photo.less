@@ -1,5 +1,5 @@
 .photo {
-  .blocks-wrapper();
+  // .blocks-wrapper();
   .container-fluid();
   background: #ffffff;
 }
@@ -27,7 +27,7 @@
 }
 
 .photo__item-wrapper {
-  padding: 20px 15px;
+  padding: 10px 14px;
 }
 
 .photo__user-name {
@@ -37,13 +37,26 @@
 .photo__time {
   font-size: 12px;
   font-weight: 200;
+  text-transform: uppercase;
 }
 
 .photo__like {
   .pink-uppercase();
-  padding: 10px 0;
-  padding-left: 32px;
+  position: relative;
+  padding: 10px 0 10px 32px;
+  // padding-left: 32px;
   font-size: 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 14px;
+    height: 12px;
+    margin-top: -6px;
+    background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMBAMAAACgrpHpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAALVBMVEX////SKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFYAAABSZIxaAAAADXRSTlMAEJ/v34DPv3Agr0BgEhX42wAAAAFiS0dEDm+9ME8AAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAxMSDRitoHEjAAAAWklEQVQI12NgVL4S6mskwCB2pfiuuW8iQ68CY7kA01WG2gkMDAyc1xnWbgDS3LcYziYCaeE7DEzXBBgYcxUYGGoTGcQuAcXELoG5QEF1oBRI4C5IKVAgDcgFAJ7sFUz21fMgAAAAAElFTkSuQmCC) no-repeat;
+  }
 }
 
 .photo__panorama-of-day {
@@ -72,10 +85,6 @@
     position: relative;
     width: calc(300*100%/620);
     margin: 10px 0;
-
-    &:first-child {
-      margin-bottom: 50px;
-    }
   }
 
   .photo__item img {
@@ -84,19 +93,27 @@
   }
 
   .photo__item-wrapper {
-    padding: 25px;
-    padding-bottom: 63px;
+    min-height: 150px;
+    padding: 18px 25px;
+    padding-bottom: 55px;
   }
 
   .photo__like {
     position: absolute;
-    bottom: 27px;
+    bottom: 23px;
     left: 25px;
+    width: 81%;
     padding: 0;
+
+    &::before {
+      left: initial;
+      right: 0;
+    }
   }
 
   .photo__item--panorama {
     width: 100%;
+    margin-bottom: 40px;
   }
 
   .photo__panorama-of-day {
@@ -112,6 +129,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-height: 110px;
+    padding-top: 15px;
+    padding-bottom: 20px;
   }
 
   .photo__user-comment--panorama {
@@ -119,9 +139,12 @@
   }
 
   .photo__like--panorama {
-    position: static;
+    position: relative;
     order: 2;
-    padding-right: 35px;
+    top: 0;
+    width: initial;
+    margin-right: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -147,5 +170,9 @@
   .photo__item--panorama img {
     width: @full-width-desktop;
     margin-left: @margin-full-width-desktop;
+  }
+
+  .photo__item--panorama .photo__item-wrapper {
+    min-height: 90px;
   }
 }
