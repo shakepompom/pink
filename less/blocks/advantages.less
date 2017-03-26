@@ -1,11 +1,11 @@
 .advantages {
   // .blocks-wrapper();
-  .container-fluid();
   text-align: center;
   background: @white;
 }
 
 .advantages__question {
+  .container-fluid();
   padding: 35px;
   padding-bottom: 25px;
   font-size: 24px;
@@ -15,9 +15,9 @@
 }
 
 .advantages__answer {
+  .container-fluid();
   width: 215px;
   margin: 0 auto;
-  // padding: 35px;//может понадобится
   padding-top: 0;
   padding-bottom: 30px;
   font-size: 24px;
@@ -27,10 +27,9 @@
 }
 
 .advantages__wrapper {
+  .container-fluid();
 //   position: relative;
-  width: @full-width-mobile;
-  margin-left: @margin-full-width-mobile;
-  padding: 0 20px;
+  width: 100%;
   background: @bg-grey;
 }
 
@@ -75,18 +74,19 @@
 }
 
 .advantages__24-hours {
+  .container-fluid();
   display: none;
 }
 
 @media @tablet-width {
   .advantages__question {
-    padding: 45px 0 0 0;
+    padding-top: 45px;
     font-size: 40px;
     line-height: 53px;
   }
 
   .advantages__answer {
-    width: 350px;
+    width: 430px;
     padding-bottom: 45px;
     font-size: 40px;
     line-height: 48px;
@@ -95,21 +95,13 @@
   .advantages__wrapper {
     position: relative;
     // display: flex;
-    width: @full-width-tablet;
-    margin-left: @margin-full-width-tablet;
-    padding: 0 40px;
     // outline: 1px solid green;
   }
 
   .advantages__items {
     position: relative;
-    // width: 50%;
     min-height: 469px;
-    // margin-left: auto;
     padding: 75px 0 45px 310px;
-    // padding-top: 75px;
-    // padding-left: 310px;
-    // padding-bottom: 35px;
     text-align: left;
     overflow: hidden;
   }
@@ -122,17 +114,12 @@
     padding-bottom: 10px;
   }
 
-  // .advantages__item:last-child > img
   .advantages__item:last-child .page-header__iphone-screen {
     position: absolute;
     left: 0;
-    // bottom: 0;
     top: 0;
     z-index: 3;
     margin-top: 5px;
-    // width: 268px;
-    // height: 481px;
-    // padding: 0;
   }
 
   .advantages__24-hours {
@@ -174,16 +161,10 @@
   }
 
   .advantages__answer {
-    width: 430px;
+    width: 690px;
     padding-bottom: 70px;
     font-size: 50px;
     line-height: 66px;
-  }
-
-  .advantages__wrapper {
-    width: @full-width-desktop;
-    margin-left: @margin-full-width-desktop;
-    padding: 0 130px;
   }
 
   .advantages__items {
@@ -223,9 +204,8 @@
   }
 
   .advantages__24-hours {
-    width: @full-width-desktop;
-    margin-left: @margin-full-width-desktop;
-    padding: 30px 130px 70px 130px;
+    padding-top: 30px;
+    padding-bottom: 70px;
     background: @bg-grey;
   }
 

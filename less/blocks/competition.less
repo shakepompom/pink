@@ -1,6 +1,6 @@
 .competition {
   .blocks-wrapper();
-  .container-fluid();
+  // .container-fluid();
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -12,6 +12,7 @@
 }
 
 .competition__name {
+  .container-fluid();
   margin-bottom: 23px;
   background: @white;
 }
@@ -27,6 +28,7 @@
 }
 
 .competition__achievement {
+  .container-fluid();
   padding-bottom: 5px;
   background: @bg-grey;
 }
@@ -49,7 +51,9 @@
 }
 
 .competition__contacts {
-  padding: 35px 0;
+  .container-fluid();
+  padding-top: 35px;
+  padding-bottom: 35px;
   background: @white;
 }
 
@@ -70,6 +74,7 @@
 }
 
 .competition__app {
+  .container-fluid();
   margin-bottom: 5px;
   background: @bg-grey;
 }
@@ -92,6 +97,7 @@
 }
 
 .competition__emotions {
+  .container-fluid();
   margin-bottom: 25px;
   background: @white;
   }
@@ -111,7 +117,12 @@
 }
 
 .competition__submit {
+  width: 280px;
   margin: 0 auto;
+}
+
+.competition__footer {
+  .container-fluid();
 }
 
 .competition__footer p {
@@ -224,6 +235,7 @@
   }
 
   .competition__submit {
+    width: 300px;
     margin: 0;
   }
 

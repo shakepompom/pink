@@ -1,12 +1,13 @@
 .inner-page {
-  .container-fluid();
   position: relative;
   text-align: center;
 }
 
 .inner-page__title {
-  min-height: 170px;
-  padding: 30px calc(25*100%/320) 45px calc(25*100%/320);
+  .container-fluid();
+  min-height: 172px;
+  padding-top: 30px;
+  padding-bottom: 45px;
   font-size: 24px;
   line-height: 30px;
   color: @white; //temp
@@ -14,10 +15,10 @@
 }
 
 .inner-page__intro {
-  width: @full-width-mobile;
+  .container-fluid();
   min-height: 185px;
-  margin-left: @margin-full-width-mobile;
-  padding: 45px 20px 50px 20px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   line-height: 30px;
   background-color: @white; //temp
 }
@@ -29,16 +30,17 @@
 @media @tablet-width {
   .inner-page__title {
     min-height: 330px;
-    padding: 70px calc(100*100%/620) 70px calc(100*100%/620);
+    padding-top: 70px;
+    padding-bottom: 70px;
     font-size: 50px;
     line-height: 60px;
   }
 
   .inner-page__intro {
-    width: @full-width-tablet;
     min-height: 230px;
-    margin-left: @margin-full-width-tablet;
     padding: 95px 100px 75px 100px;
+    padding-top: 95px;
+    padding-bottom: 75px;
     font-size: 18px;
     font-weight: 400;
   }
@@ -56,14 +58,13 @@
 @media @desktop-width {
   .inner-page__title {
     min-height: 285px;
-    padding: 65px calc(60*100%/940) 90px calc(60*100%/940);
+    padding-top: 65px;
+    padding-bottom: 90px;
   }
 
   .inner-page__intro {
-    width: @full-width-desktop;
     min-height: 240px;
-    margin-left: @margin-full-width-desktop;
-    padding: 95px 100px 85px 100px;
+    padding-bottom: 85px;
   }
 
   .inner-page__intro br {
