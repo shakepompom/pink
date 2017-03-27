@@ -28,7 +28,6 @@
 }
 
 .competition__name input {
-  .input-text();
   width: 100%;
   margin-top: 10px;
 }
@@ -89,7 +88,6 @@
 }
 
 .competition__contacts input {
-  .input-text();
   width: 100%;
   margin-top: 10px;
 }
@@ -145,7 +143,6 @@
 }
 
 .competition__emotions textarea {
-  .input-text();
   width: 100%;
   height: 200px;
   resize: none;
@@ -196,10 +193,6 @@
   .competition__name span {
     margin-left: 0;
     margin-right: 20px;
-  }
-
-  .competition__name input {
-    .input-text();
   }
 
   .competition__app {
@@ -253,10 +246,10 @@
     &::before {
       content: "";
       position: absolute;
-      top: 10px;
-      right: 0;
-      width: 63px;
-      height: 63px;
+      top: 12px;
+      right: 2px;
+      width: 59px;
+      height: 59px;
       background: @grey;
     }
   }
@@ -264,10 +257,10 @@
   .competition__contacts label[for="tel"]::after {
     content: "";
     position: absolute;
-    top: 10px;
-    right: 0;
-    width: 63px;
-    height: 63px;
+    top: 12px;
+    right: 2px;
+    width: 59px;
+    height: 59px;
     background: url("../images/icon-phone.svg") no-repeat center center;
   }
 
