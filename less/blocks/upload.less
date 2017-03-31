@@ -73,7 +73,7 @@
   right: 20px;
   display: none;
   height: 2px;
-  background: @bg-dark;
+  background: @navy;
 
   &::before {
     content: "";
@@ -107,7 +107,7 @@
     top: 0;
     left: 0;
     left: -20px;
-    width: calc(320*100%/280);
+    width: calc(~"100% + 40px");
     height: 1px;
     background: #dddfe0;
   }
@@ -276,7 +276,7 @@
       height: 44px;
     }
 
-        &--crop::before {
+    &--crop::before {
       background-size: cover;
     }
 
@@ -292,7 +292,7 @@
       content: "";
       position: absolute;
       top: 55px;
-      left: 35px;
+      left: 5px;
       right: -10px;
       height: 1px;
       background: #dddfe0;

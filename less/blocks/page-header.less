@@ -1,11 +1,12 @@
 .page-header {
   position: relative;
   // outline: 1px solid red;
-  background: @bg-darker url("../images/bg-back-mobile.jpg") no-repeat center top;
+  background: @bg-dark url("../images/bg-back-mobile.jpg") no-repeat center top;
 
   @media @retina {
     background-image: url("../images/bg-back-mobile@2x.jpg");
-    background-size: 700px auto;
+    // background-size: 700px auto;
+    background-size: auto 461px;
   }
 }
 
@@ -25,7 +26,8 @@
 
     @media @retina {
       background-image: url("../images/bg-back-tablet@2x.jpg");
-      background-size: 1200px auto;
+      // background-size: 1200px auto;
+      background-size: cover;
     }
   }
 
@@ -38,6 +40,7 @@
 @media @desktop-width {
   .page-header {
     background-image: url("../images/bg-back-desktop.jpg");
+    // background-size: cover;
   }
 
   .page-header__iphone-hand {

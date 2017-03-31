@@ -68,13 +68,13 @@
   text-align: center;
   font-size: 12px;
   font-weight: 700;
-  color: #ffffff;
+  color: @white;
   text-transform: uppercase;
-  background-color: @pink;
+  background: @pink;
 }
 
 .photo__item--panorama img {
-  width: calc(320*100%/280);
+  width: calc(~"100% + 40px");
   height: auto;
   margin-left: -20px;
 }
@@ -120,7 +120,7 @@
   }
 
   .photo__item--panorama img {
-    width: calc(700*100%/620);
+    width: calc(~"100% + 80px");
     margin-left: -40px;
   }
 
@@ -168,7 +168,7 @@
   }
 
   .photo__item--panorama img {
-    width: calc(1200*100%/940);
+    width: calc(~"100% + 260px");
     margin-left: -130px;
   }
 

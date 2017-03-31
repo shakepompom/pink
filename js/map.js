@@ -9,9 +9,13 @@ ymaps.ready(init);
                 controls: []
             });
 
-            myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
+            myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {}, {
                 // hintContent: 'Москва!',
                 // balloonContent: 'Столица России'
+                iconLayout: "default#image",
+                iconImageHref: "images/icon-map-marker.svg",
+                iconImageSize: [36, 36],
+                iconImageOffset: [-18, -18]
             });
 
             myMap.geoObjects.add(myPlacemark);
