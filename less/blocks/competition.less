@@ -7,6 +7,10 @@
   background: @white;
 }
 
+.competition__label-wrapper {
+  position: relative;
+}
+
 .competition label {
   position: relative;
   display: block;
@@ -219,6 +223,24 @@
     padding-left: 80px;
   }
 
+  .competition__app input[type=radio] + label {
+
+    &::before {
+      left: 15px;
+    }
+
+    &:active::after {
+      left: 28px;
+    }
+  }
+
+  .competition__app input[type=radio]:checked + label {
+
+    &::after {
+      left: 28px;
+    }
+  }
+
   .competition__contacts {
     order: 3;
     width: auto;
@@ -297,6 +319,24 @@
     top: 0;
   }
 
+  .competition__achievement input[type=checkbox] + label {
+
+    &::before {
+      left: 10px;
+    }
+
+    &:active::after {
+      left: 20px;
+    }
+  }
+
+  .competition__achievement input[type=checkbox]:checked + label {
+
+    &::after {
+      left: 20px;
+    }
+  }
+
   .competition__emotions {
     order: 5;
     width: auto;
@@ -371,6 +411,24 @@
     padding-right: 20px;
   }
 
+  .competition__app input[type=radio] + label {
+
+    &::before {
+      left: 19px;
+    }
+
+    &:active::after {
+      left: 32px;
+    }
+  }
+
+  .competition__app input[type=radio]:checked + label {
+
+    &::after {
+      left: 32px;
+    }
+  }
+
   .competition__contacts {
     width: 100%;
     margin: 0 130px;
@@ -404,32 +462,50 @@
     justify-content: space-between;
   }
 
-  .competition__achievement label {
+  .competition__label-wrapper {
 
-    &[for="selfie"] {
+    &--selfie {
       order: 1;
     }
 
-    &[for="burnt"] {
+    &--burnt {
       order: 4;
     }
 
-    &[for="chuck-norris"] {
+    &--chuck-norris {
       order: 2;
     }
 
-    &[for="present"] {
+    &--present {
       order: 5;
     }
 
-    &[for="tower"] {
+    &--tower {
       order: 3;
     }
 
-    &[for="hotel"] {
+    &--hotel {
       order: 6;
     }
   }
+
+  // .competition__achievement input[type=checkbox] + label {
+  //
+  //   &::before {
+  //     left: 10px;
+  //   }
+  //
+  //   &:active::after {
+  //     left: 20px;
+  //   }
+  // }
+  //
+  // .competition__achievement input[type=checkbox]:checked + label {
+  //
+  //   &::after {
+  //     left: 20px;
+  //   }
+  // }
 
   .competition__emotions {
     width: 100%;

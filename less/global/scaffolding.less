@@ -106,6 +106,7 @@ body {
 
   &--white:active {
     color: @pink-03;
+    box-shadow: none;
     background: @white;
   }
 
@@ -205,5 +206,65 @@ textarea {
 
   &:focus::placeholder {
     color: transparent;
+  }
+}
+
+input[type=radio] + label {
+
+  &::before {
+    .radio();
+  }
+
+  &:hover::before {
+    .radio-hover();
+  }
+
+  &:active::before {
+    .radio-active();
+  }
+
+  &:active::after {
+    .radio-checked();
+  }
+}
+
+input[type=radio]:checked + label {
+
+  &::after {
+    .radio-checked();
+  }
+
+  &:active::after {
+    display: none;
+  }
+}
+
+input[type=checkbox] + label {
+
+  &::before {
+    .checkbox();
+  }
+
+  &:hover::before {
+    .checkbox-hover();
+  }
+
+  &:active::before {
+    .checkbox-active();
+  }
+
+  &:active::after {
+    .checkbox-checked();
+  }
+}
+
+input[type=checkbox]:checked + label {
+
+  &::after {
+    .checkbox-checked();
+  }
+
+  &:active::after {
+    display: none;
   }
 }

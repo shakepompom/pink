@@ -49,6 +49,14 @@
     background: url("../images/icon-editor-crop-grey.svg") no-repeat center center;
   }
 
+  &--crop:hover::before {
+    background: url("../images/icon-editor-crop-darkgrey.svg") no-repeat center center;
+  }
+
+  &--crop:active::before {
+    background: url("../images/icon-editor-crop-red.svg") no-repeat center center;
+  }
+
   &--crop-active::before {
     background: url("../images/icon-editor-crop-red.svg") no-repeat center center;
   }
@@ -57,8 +65,32 @@
     background: url("../images/icon-editor-fill-grey.svg") no-repeat center center;
   }
 
+  &--fill:hover::before {
+    background: url("../images/icon-editor-fill-darkgrey.svg") no-repeat center center;
+  }
+
+  &--fill:active::before {
+    background: url("../images/icon-editor-fill-red.svg") no-repeat center center;
+  }
+
+  &--fill-active::before {
+    background: url("../images/icon-editor-fill-red.svg") no-repeat center center;
+  }
+
   &--contrast::before {
     background: url("../images/icon-editor-contrast-grey.svg") no-repeat center center;
+  }
+
+  &--contrast:hover::before {
+    background: url("../images/icon-editor-contrast-darkgrey.svg") no-repeat center center;
+  }
+
+  &--contrast:active::before {
+    background: url("../images/icon-editor-contrast-red.svg") no-repeat center center;
+  }
+
+  &--contrast-active::before {
+    background: url("../images/icon-editor-contrast-red.svg") no-repeat center center;
   }
 }
 
@@ -172,17 +204,23 @@
       height: 23px;
     }
 
-        &--crop::before {
+    &--crop::before,
+    &--crop:hover::before,
+    &--crop:active::before {
       background: url("../images/icon-editor-crop-red.svg") no-repeat center center;
       background-size: cover;
     }
 
-    &--fill::before {
+    &--fill::before,
+    &--fill:hover::before,
+    &--fill:active::before {
       background: url("../images/icon-editor-fill-red.svg") no-repeat center center;
       background-size: cover;
     }
 
-    &--contrast::before {
+    &--contrast::before,
+    &--contrast:hover::before,
+    &--contrast:active::before {
       background: url("../images/icon-editor-contrast-red.svg") no-repeat center center;
       background-size: 16px 16px;
     }
@@ -284,7 +322,9 @@
       background-size: cover;
     }
 
-    &--contrast::before {
+    &--contrast::before,
+    &--contrast:hover::before,
+    &--contrast:active::before {
       background-size: 33px 33px;
     }
 
