@@ -5,7 +5,7 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <title>PINK | Взгляните на жизнь иначе!</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
 
@@ -166,9 +166,9 @@
       <div class="reviews">
         <div class="reviews__wrapper  slider">
           <div class="slider__wrapper">
-              <input type="radio" name="reviews" id="reviews-1" checked>
-              <input type="radio" name="reviews" id="reviews-2">
-              <input type="radio" name="reviews" id="reviews-3">
+              <input class="slider__slide-checked" type="radio" name="reviews-toggle" id="reviews-1" checked>
+              <input class="slider__slide-checked" type="radio" name="reviews-toggle" id="reviews-2">
+              <input class="slider__slide-checked" type="radio" name="reviews-toggle" id="reviews-3">
             <div class="slider__controls">
               <label class="slider__bullet" for="reviews-1"></label>
               <label class="slider__bullet" for="reviews-2"></label>
@@ -187,17 +187,17 @@
           <div class="reviews__arrow  reviews__arrow--left"></div>
           <ul class="reviews__items">
             <!-- <div class="reviews__arrow--left"></div> -->
-            <li class="reviews__item  slider__item">
+            <li class="reviews__item  slider__item" id="slider__item-1">
               <h3 class="reviews__user-name">Николай Петров</h3>
               <p class="reviews__user-datas">25 лет, водитель трамвая</p>
               <p class="reviews__review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-            <li class="reviews__item  slider__item">
+            <li class="reviews__item  slider__item" id="slider__item-2">
               <h3 class="reviews__user-name">Максим Афанасьев</h3>
               <p class="reviews__user-datas">21 год, студент СПбГУ</p>
               <p class="reviews__review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!»</p>
             </li>
-            <li class="reviews__item  slider__item">
+            <li class="reviews__item  slider__item" id="slider__item-3">
               <h3 class="reviews__user-name">Аркадий Панфилов</h3>
               <p class="reviews__user-datas">29 лет, бизнессмен</p>
               <p class="reviews__review">«Это приложение перевернуло мой мир!»</p>
@@ -373,6 +373,9 @@
         </div>
       </div>
     </footer>
+    <div class="overlay-transparent"></div>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
     <script type="text/javascript" src="js/map.js"></script>
   </body>
 </html>

@@ -1,10 +1,6 @@
 "use strict";
 
 module.exports = function(grunt) {
-  // grunt.loadNpmTasks("grunt-contrib-less");
-  // grunt.loadNpmTasks("grunt-browser-sync");
-  // grunt.loadNpmTasks("grunt-contrib-watch");
-  // grunt.loadNpmTasks("grunt-postcss");
 
   require("load-grunt-tasks")(grunt);
 
@@ -28,12 +24,57 @@ module.exports = function(grunt) {
               "last 2 Opera versions",
               "last 2 Edge versions",
             ]}),
-            require("css-mqpacker")({
-              sort: true
-            })
+            // require("css-mqpacker")({
+            //   sort: true
+            // })
           ]
         },
         src: "css/*.css"
+      }
+    },
+
+    csso: {
+      style: {
+        options: {
+          report: "gzip"
+        },
+        files: {
+          "css/style.min.css": ["css/style.css"]
+        }
+      }
+    },
+
+    imagemin: {
+      images: {
+        options: {
+          optimizationLevel: 3
+        },
+        files: [{
+          expand: true,
+          src: ["images/**/*.{png,jpg,gif}"]
+        }]
+      }
+    },
+
+    svgstore: {
+      symbols: {
+        options: {
+          svg: {
+            style: "display: none"
+          }
+        },
+        files: {
+          "images/symbols.svg": ["images/icons/*.svg"]
+        }
+      }
+    },
+
+    svgmin: {
+      symbols: {
+        files: [{
+          expand: true,
+          src: ["images/icons/*.svg"]
+        }]
       }
     },
 
@@ -62,30 +103,8 @@ module.exports = function(grunt) {
         tasks: ["less", "postcss"]
       }
     }
-
-    csso: {
-      style: {
-        options: {
-          report: "gzip"
-        },
-        files: {
-          "css/style.min.css": ["css/style.css"]
-        }
-      }
-    }
-
-    imagemin: {
-      images: {
-        options: {
-          optimizationLevel: 3
-        },
-        files: [{
-          expand: true,
-          src: ["img/**/*.[png,jpg,gif]"]
-        }]
-      }
-    }
   });
 
+  grunt.registerTask("symbols", ["svgmin", "svgstore"]);
   grunt.registerTask("serve", ["browserSync", "watch"]);
 };

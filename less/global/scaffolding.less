@@ -11,6 +11,12 @@
   box-sizing: border-box;
 }
 
+*:hover,
+*:hover::before,
+*:hover::after {
+  transition: all 0.4s ease;
+}
+
 nav,
 ul,
 li,
@@ -32,6 +38,25 @@ textarea {
 
 body {
   background: @white;
+}
+
+.element.element--shown {
+  display: block;
+}
+
+.element.element--hidden {
+  display: none;
+}
+
+.overlay-transparent {
+  position: fixed;
+  z-index: 5;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
 }
 
 .btn {
