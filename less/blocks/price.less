@@ -74,24 +74,24 @@
 
   &--green-mark::before {
     content: "";
-    position: absolute;
-    top: 20px;
-    right: 17px;
+    position: relative;
     z-index: 2;
+    display: block;
     width: 31px;
     height: 21px;
+    margin: 5px -5px 0 auto;
     background: url("../images/icon-yes.svg") no-repeat center center;
-    background-size: cover;
+    background-size: contain;
   }
 
   &--red-mark::before {
     content: "";
-    position: absolute;
-    top: 15px;
-    right: 19px;
+    position: relative;
     z-index: 2;
+    display: block;
     width: 27px;
     height: 27px;
+    margin: 0 -5px 0 auto;
     background: url("../images/icon-no.svg") no-repeat center center;
     background-size: cover;
   }
@@ -184,15 +184,11 @@
 
   .price__tariff {
     &--green-mark::before {
-      top: 13px;
-      left: 50%;
-      margin-left: -15px;
+      margin: 0 auto;
     }
 
     &--red-mark::before {
-      top: 9px;
-      left: 50%;
-      margin-left: -13px;
+      margin: 0 auto;
     }
   }
 
@@ -247,16 +243,6 @@
 
   .price__tariff-table tbody td {
     font-size: 18px;
-  }
-
-  .price__tariff {
-    &--green-mark::before {
-      top: 22px;
-    }
-
-    &--red-mark::before {
-      top: 16px;
-    }
   }
 
   .price__tariff--standart {

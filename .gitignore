@@ -8,3 +8,5 @@ Thumbs.db
 *.ai
 css/*.css
 /pixelperfect/*
+build/
+img/
