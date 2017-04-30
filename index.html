@@ -6,7 +6,9 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <title>PINK | Взгляните на жизнь иначе!</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <!-- <script src="http://pixp.fdrv.guru/pixp.js" type="text/javascript"></script> -->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <!-- <script src="http://pixp.fdrv.guru/pixp.js" type="text/javascript"></script> -->
@@ -129,18 +131,14 @@
               <h3 class="advantages__title">Поднимает настроение</h3>
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               <picture>
-                <source media="(min-width:1200px)" srcset="../images/iphone-screen-desktop-1@1x.png 1x, ../images/iphone-screen-desktop-1@2x.png 2x">
-                <source media="(min-width:700px)" srcset="../images/iphone-screen-tablet-1@1x.png 1x, ../images/iphone-screen-tablet-1@2x.png 2x">
-                <img class="advantages__iphone-screen" src="../images/iphone-screen-mobile-1.png" srcset="../images/iphone-screen-mobile-1@2x.png 2x" alt="">
+                <img class="advantages__iphone-screen" src="../images/iphone-screen-desktop-1@1x.png" srcset="../images/iphone-screen-desktop-1@2x.png 2x" alt="">
               </picture>
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               <picture>
-                <source media="(min-width:1200px)" srcset="../images/iphone-screen-desktop-2@1x.png 1x, ../images/iphone-screen-desktop-2@2x.png 2x">
-                <source media="(min-width:700px)" srcset="../images/iphone-screen-tablet-2@1x.png 1x, ../images/iphone-screen-tablet-2@2x.png 2x">
-                <img class="advantages__iphone-screen" src="../images/iphone-screen-mobile-2.png" srcset="../images/iphone-screen-mobile-2@2x.png 2x" alt="">
+                <img class="advantages__iphone-screen" src="../images/iphone-screen-desktop-2@1x.png" srcset="../images/iphone-screen-desktop-2@2x.png 2x" alt="">
               </picture>
             </li>
             <li class="advantages__item">
@@ -164,48 +162,48 @@
         </div>
       </div>
       <div class="reviews">
-        <div class="reviews__wrapper  slider">
-          <div class="slider__wrapper">
-              <input class="slider__slide-checked" type="radio" name="reviews-toggle" id="reviews-1" checked>
-              <input class="slider__slide-checked" type="radio" name="reviews-toggle" id="reviews-2">
-              <input class="slider__slide-checked" type="radio" name="reviews-toggle" id="reviews-3">
-            <div class="slider__controls">
-              <label class="slider__bullet" for="reviews-1"></label>
-              <label class="slider__bullet" for="reviews-2"></label>
-              <label class="slider__bullet" for="reviews-3"></label>
-              <!-- <div class="slider__bullet  slider__bullet--1">
-                <input type="radio" name="reviews" id="reviews-1" checked>
-              </div>
-              <div class="slider__bullet  slider__bullet--2">
-                <input type="radio" name="reviews" id="reviews-2">
-              </div>
-              <div class="slider__bullet  slider__bullet--3">
-                <input type="radio" name="reviews" id="reviews-3">
-              </div> -->
+          <div class="reviews__wrapper  jcarousel__wrapper">
+            <div class="jcarousel" data-jcarousel="true">
+              <ul class="reviews__items">
+                <li class="reviews__item  jcarousel__item">
+                  <h3 class="reviews__user-name">Николай Петров</h3>
+                  <p class="reviews__user-datas">25 лет, водитель трамвая</p>
+                  <p class="reviews__review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </li>
+                <li class="reviews__item  jcarousel__item">
+                  <h3 class="reviews__user-name">Максим Афанасьев</h3>
+                  <p class="reviews__user-datas">21 год, студент СПбГУ</p>
+                  <p class="reviews__review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!»</p>
+                </li>
+                <li class="reviews__item  jcarousel__item">
+                  <h3 class="reviews__user-name">Аркадий Панфилов</h3>
+                  <p class="reviews__user-datas">29 лет, бизнесмен</p>
+                  <p class="reviews__review">«Это приложение перевернуло мой мир!»</p>
+                </li>
+              </ul>
             </div>
+            <a class="jcarousel__control  jcarousel__control--prev" href="#" data-jcarouselcontrol="true">
+              <svg version="1.1" id="icon-review-arrow-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+              <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261
+              	c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248
+              	c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+              </svg>
+            </a>
+            <a class="jcarousel__control  jcarousel__control--next" href="#" data-jcarouselcontrol="true">
+              <svg version="1.1" id="icon-review-arrow-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+              <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012
+              	c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248
+              	c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+              </svg>
+            </a>
+            <p class="jcarousel__pagination" data-jcarouselpagination="true">
+              <a class="jcarousel__pagination--active" href="#1">1</a>
+              <a href="#2">2</a>
+              <a href="#3">3</a>
+            </p>
           </div>
-          <div class="reviews__arrow  reviews__arrow--left"></div>
-          <ul class="reviews__items">
-            <!-- <div class="reviews__arrow--left"></div> -->
-            <li class="reviews__item  slider__item" id="slider__item-1">
-              <h3 class="reviews__user-name">Николай Петров</h3>
-              <p class="reviews__user-datas">25 лет, водитель трамвая</p>
-              <p class="reviews__review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-            <li class="reviews__item  slider__item" id="slider__item-2">
-              <h3 class="reviews__user-name">Максим Афанасьев</h3>
-              <p class="reviews__user-datas">21 год, студент СПбГУ</p>
-              <p class="reviews__review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!»</p>
-            </li>
-            <li class="reviews__item  slider__item" id="slider__item-3">
-              <h3 class="reviews__user-name">Аркадий Панфилов</h3>
-              <p class="reviews__user-datas">29 лет, бизнессмен</p>
-              <p class="reviews__review">«Это приложение перевернуло мой мир!»</p>
-            </li>
-            <!-- <div class="reviews__arrow--right"></div> -->
-          </ul>
-          <div class="reviews__arrow  reviews__arrow--right"></div>
-        </div>
       </div>
       <div class="page-main__triangle-white">
         <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -377,5 +375,6 @@
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
     <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.jcarousel.js"></script>
   </body>
 </html>

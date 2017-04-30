@@ -1,0 +1,160 @@
+.jcarousel__wrapper {
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.jcarousel ul {
+  position: relative;
+  width: 20000em;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+.jcarousel__control {
+  display: none;
+}
+
+.jcarousel__pagination {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.jcarousel__pagination a {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 13px;
+  border: 3px solid @white;
+  border-radius: 50%;
+  text-indent: -9999px;
+  background: @navy-03;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background: @navy-06;
+  }
+
+  &:active {
+    background: @navy-01;
+  }
+}
+
+.jcarousel__pagination a.jcarousel__pagination--active {
+  border: 3px solid @navy;
+  background: @white;
+}
+
+@media @desktop-width {
+  .jcarousel__control {
+    position: absolute;
+    top: -25px;
+    display: inline-block;
+    // width: 30px;
+    // height: 30px;
+    width: 22px;
+    height: 241px;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    // padding: 150px 0;
+    // margin-top: -15px;
+
+    & path {
+      fill: @navy-03;
+    }
+
+    &:hover path {
+      fill: @navy-06;
+    }
+
+    &:active path {
+      fill: @navy-01;
+    }
+  }
+
+  .jcarousel__control--prev {
+    left: 0;
+  }
+
+  .jcarousel__control--next {
+    right: 0;
+  }
+
+  .jcarousel__pagination {
+    display: none;
+  }
+}
+
+
+
+
+
+
+// .slider__wrapper {
+//   width: 68px;
+//   height: 12px;
+//   margin: 0 auto;
+//   // text-align: center;
+// }
+//
+// .slider__wrapper input {
+//   display: none;
+// }
+//
+// .slider__controls {
+//   position: relative;
+//   font-size: 0;
+// }
+//
+// .slider__bullet {
+//   display: inline-block;
+//
+//   // &::before {
+//     // content: "";
+//     // position: absolute;
+//     // top: 0;
+//     // left: 0;
+//     // width: 12px;
+//     // height: 12px;
+//     width: 12px;
+//     height: 12px;
+//     margin-right: 16px;
+//     border: 3px solid @white;
+//     border-radius: 50%;
+//     background: rgba(40, 54, 69, 0.3);
+//
+//     &:last-child {
+//       margin-right: 0;
+//     }
+//
+//     &:hover {
+//       background: rgba(40, 54, 69, 0.6);
+//     }
+//
+//     &:active {
+//       background: rgba(40, 54, 69, 0.1);
+//     }
+//   // }
+// }
+//
+// // TODO: input:checked ~ label
+// // #reviews-1:checked ~ label[for=reviews-1],
+// // #reviews-2:checked ~ label[for=reviews-2],
+// // #reviews-3:checked ~ label[for=reviews-3] {
+// //   width: 12px;
+// //   height: 12px;
+// //   border: 3px solid @navy;
+// //   background: @white;
+// // }
