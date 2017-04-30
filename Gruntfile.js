@@ -160,12 +160,19 @@ module.exports = function(grunt) {
       }
     },
 
-    svgmin: {
+    svgstore: {
       symbols: {
-        files: [{
-          expand: true,
-          src: ["img/icons/*.svg"]
-        }]
+        options: {
+          svg: {
+            style: "display: none",
+            version: "1.1",
+            xmlns: "http://www.w3.org/2000/svg",
+            xlink: "http://www.w3.org/1999/xlink"
+          }
+        },
+        files: {
+          "images/symbols.svg": ["images/icons/*.svg"]
+        }
       }
     },
 
@@ -205,13 +212,11 @@ module.exports = function(grunt) {
     // "less",
     // "postcss",
     // "csso",
-    // "svgmin",
     // "imagemin"
 
     //для тестов
     "less",
     "postcss",
     "csso",
-    "svgmin"
   ])
 };
