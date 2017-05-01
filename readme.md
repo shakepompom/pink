@@ -22,34 +22,8 @@
 
 5. Перейти в директорию проекта.
 
-6. Установить grunt локально [ npm install grunt --save-dev ].
+6. Установить все необходимые зависимости [ npm i ].
 
-7. Установить препроцессор less [ npm install grunt-contrib-less --save-dev ].
+7. Собрать билд [ npm run build ] - опционально.
 
-8. Установить автопрефиксер [ npm install grunt-autoprefixer --save-dev ].
-
-9. Запустить сборку less [ grunt less ].
-
-10. Установить все необходимые зависимости [ npm i ].
-
-11. Собрать билд [ npm run build ] - опционально.
-
-12. Запустить на локальном хосте [ npm start ] - автоматически соберет билд и запустит.
-
-
-
-
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`._
-
-
-
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github.svg"></a>
-
-
-[travis-image]: https://travis-ci.org/htmlacademy-adaptive/87862-pink.svg?branch=master
-[travis-url]: https://travis-ci.org/htmlacademy-adaptive/87862-pink
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/87862-pink.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/87862-pink
-
-pink: development pink-adaptive
+8. Запустить на локальном хосте [ npm start ] - автоматически соберет билд и запустит.
