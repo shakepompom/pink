@@ -166,8 +166,7 @@ module.exports = function(grunt) {
           svg: {
             style: "display: none",
             version: "1.1",
-            xmlns: "http://www.w3.org/2000/svg",
-            xlink: "http://www.w3.org/1999/xlink"
+            xmlns: "http://www.w3.org/2000/svg"
           }
         },
         files: {
@@ -201,7 +200,6 @@ module.exports = function(grunt) {
         tasks: ["less", "postcss", "csso"]
       }
     },
-
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);

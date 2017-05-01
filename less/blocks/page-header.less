@@ -13,9 +13,10 @@
 .page-header__iphone-hand {
   position: absolute;
   top: 176px;
-  left: 0;
-  width: 258px;
-  height: 286px;
+  left: -180px;
+  width: auto;
+  height: 320px;
+  clip: rect(auto, auto, 286px, auto);
 }
 
 .page-header--inner {
@@ -35,9 +36,12 @@
 
   .page-header__iphone-hand {
     top: 185px;
-    left: 0;
-    width: 700px;
+    left: -90px;
+    width: auto;
     height: 545px;
+    // clip: initial;
+    clip: rect(auto, auto, auto, auto);
+    // clip: rect(auto, 50px, auto, auto);
   }
 }
 
@@ -50,7 +54,7 @@
   .page-header__iphone-hand {
     top: 203px;
     left: 150px;
-    width: 1050px;
+    width: auto;
     height: 645px;
   }
 }
