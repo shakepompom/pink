@@ -146,23 +146,27 @@
   }
 
   .photo__item--panorama .photo__item-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    position: relative;
     min-height: 110px;
     padding-top: 15px;
     padding-bottom: 20px;
   }
 
   .photo__user-comment--panorama {
-    order: 3;
+    // order: 3;
   }
 
   .photo__like--panorama {
-    position: relative;
-    order: 2;
-    top: 0;
+    position: absolute;
+    // order: 2;
+    top: 15px;
+    right: 0;
+    left: initial;
     width: initial;
+    // width: initial;
     margin-right: 30px;
     padding-right: 30px;
   }
