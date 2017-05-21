@@ -57,7 +57,18 @@
   background: @white;
 }
 
+@media @tablet-width {
+  .jcarousel__wrapper {
+    padding-bottom: 65px;
+  }
+}
+
 @media @desktop-width {
+  .jcarousel__wrapper {
+    position: relative;
+    padding-bottom: 0;
+  }
+
   .jcarousel__control {
     position: absolute;
     top: -25px;
@@ -66,18 +77,6 @@
     height: 241px;
     padding-top: 50px;
     padding-bottom: 150px;
-
-    // & path {
-    //   fill: @navy-03;
-    // }
-    //
-    // &:hover path {
-    //   fill: @navy-06;
-    // }
-    //
-    // &:active path {
-    //   fill: @navy-01;
-    // }
   }
 
   .jcarousel__control--prev {

@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <title>Пинк | Фото</title>
     <link href="css/style.min.css" rel="stylesheet">
-    <!-- <script src="http://pixp.fdrv.guru/pixp.js" type="text/javascript"></script> -->
   </head>
   <body>
     <svg style="display: none" version="1.1" xmlns="http://www.w3.org/2000/svg"><symbol viewBox="0 0 21.706 41.719" id="icon-review-arrow-left"><title>icon-review-arrow-left</title> <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261
@@ -21,8 +20,8 @@
       v10.02L13.472,31.85L1.925,24.979V15.127z"/> </symbol></svg>
     <header class="page-header  page-header--inner">
       <nav class="main-nav">
-        <div class="main-nav__wrapper  main-nav__wrapper--inner">
-          <div class="main-nav__logo  main-nav__logo--white">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__logo">
             <a href="index.html">
               <svg version="1.1" id="logo-pink-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               	 width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
@@ -89,128 +88,127 @@
           </div>
           <button class="main-nav__toggle  main-nav__toggle--open">Открыть меню</button>
           <button class="main-nav__toggle  main-nav__toggle--close">Закрыть меню</button>
-          <ul class="main-nav__items">
-            <li class="main-nav__item"></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-            <li class="main-nav__item  main-nav__item--active"><a class="main-nav__link" href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
+          <ul class="main-nav__list  main-menu">
+            <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
+            <li class="main-menu__item  main-menu__item--active"><a class="main-menu__link" href="#">Фотографии</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
       <div class="inner-page">
           <h1 class="inner-page__title">Фотографии<br>пользователей</h1>
-          <p class="inner-page__intro">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
+          <p class="inner-page__description">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
       </div>
     </header>
     <main class="page-main">
       <div class="photo">
-        <div class="photo__items">
+        <div class="photo__list">
           <div class="photo__item  photo__item--panorama">
             <a href="#">
-                <img class="photo__img--desktop" src="../images/panorama-desktop.jpg" srcset="../images/panorama-desktop@2x.jpg 2x" alt="">
-                <img class="photo__img--tablet" src="../images/panorama-tablet.jpg" srcset="../images/panorama-tablet@2x.jpg 2x" alt="">
-                <img class="photo__img--mobile" src="../images/panorama-mobile.jpg" srcset="../images/panorama-mobile@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--desktop" src="../images/panorama-desktop.jpg" srcset="../images/panorama-desktop@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--tablet" src="../images/panorama-tablet.jpg" srcset="../images/panorama-tablet@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--mobile" src="../images/panorama-mobile.jpg" srcset="../images/panorama-mobile@2x.jpg 2x" alt="">
             </a>
-            <p class="photo__panorama-of-day">Панорама дня</p>
-            <div class="photo__item-wrapper">
-              <p class="photo__title"><strong class="photo__user-name">Анна </strong><span class="photo__time">(5 минут назад)</span></p>
+            <div class="photo__panorama-of-day">Панорама дня</div>
+            <div class="photo__item-inner">
+              <div class="photo__title"><strong class="photo__user-name">Анна </strong><span class="photo__time">(5 минут назад)</span></div>
               <p class="photo__user-comment--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-              <p class="photo__like  photo__like--panorama">Нравится: <span class="photo__like-counting">215</span></p>
+              <div class="photo__like  photo__like--panorama">Нравится: <span class="photo__like-counting">215</span></div>
             </div>
           </div>
           <div class="photo__item">
             <a href="#">
-                <img class="photo__img--desktop" src="../images/photo-1-desktop.jpg" srcset="../images/photo-1-desktop@2x.jpg 2x" alt="">
-                <img class="photo__img--tablet" src="../images/photo-1-tablet.jpg" srcset="../images/photo-1-tablet@2x.jpg 2x" alt="">
-                <img class="photo__img--mobile" src="../images/photo-1-mobile.jpg" srcset="../images/photo-1-mobile@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--desktop" src="../images/photo-1-desktop.jpg" srcset="../images/photo-1-desktop@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--tablet" src="../images/photo-1-tablet.jpg" srcset="../images/photo-1-tablet@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--mobile" src="../images/photo-1-mobile.jpg" srcset="../images/photo-1-mobile@2x.jpg 2x" alt="">
             </a>
-            <div class="photo__item-wrapper">
-              <p class="photo__title"><strong class="photo__user-name">Левон </strong><span class="photo__time">(5 часов назад)</span></p>
+            <div class="photo__item-inner">
+              <div class="photo__title"><strong class="photo__user-name">Левон </strong><span class="photo__time">(5 часов назад)</span></div>
               <p class="photo__user-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <p class="photo__like">Нравится: <span class="photo__like-counting">356</span></p>
+              <div class="photo__like">Нравится: <span class="photo__like-counting">356</span></div>
             </div>
           </div>
           <div class="photo__item">
             <a href="#">
-                <img class="photo__img--desktop" src="../images/photo-2-desktop.jpg" srcset="../images/photo-2-desktop@2x.jpg 2x" alt="">
-                <img class="photo__img--tablet" src="../images/photo-2-tablet.jpg" srcset="../images/photo-2-tablet@2x.jpg 2x" alt="">
-                <img class="photo__img--mobile" src="../images/photo-2-mobile.jpg" srcset="../images/photo-2-mobile@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--desktop" src="../images/photo-2-desktop.jpg" srcset="../images/photo-2-desktop@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--tablet" src="../images/photo-2-tablet.jpg" srcset="../images/photo-2-tablet@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--mobile" src="../images/photo-2-mobile.jpg" srcset="../images/photo-2-mobile@2x.jpg 2x" alt="">
             </a>
-            <div class="photo__item-wrapper">
-              <p class="photo__title"><strong class="photo__user-name">Антон </strong><span class="photo__time">(12 часов назад)</span></p>
+            <div class="photo__item-inner">
+              <div class="photo__title"><strong class="photo__user-name">Антон </strong><span class="photo__time">(12 часов назад)</span></div>
               <p class="photo__user-comment">Соседи будут рады!</p>
-              <p class="photo__like">Нравится: <span class="photo__like-counting">666</span></p>
+              <div class="photo__like">Нравится: <span class="photo__like-counting">666</span></div>
             </div>
           </div>
           <div class="photo__item">
             <a href="#">
-                <img class="photo__img--desktop" src="../images/photo-3-desktop.jpg" srcset="../images/photo-3-desktop@2x.jpg 2x" alt="">
-                <img class="photo__img--tablet" src="../images/photo-3-tablet.jpg" srcset="../images/photo-3-tablet@2x.jpg 2x" alt="">
-                <img class="photo__img--mobile" src="../images/photo-3-mobile.jpg" srcset="../images/photo-3-mobile@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--desktop" src="../images/photo-3-desktop.jpg" srcset="../images/photo-3-desktop@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--tablet" src="../images/photo-3-tablet.jpg" srcset="../images/photo-3-tablet@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--mobile" src="../images/photo-3-mobile.jpg" srcset="../images/photo-3-mobile@2x.jpg 2x" alt="">
             </a>
-            <div class="photo__item-wrapper">
-              <p class="photo__title"><strong class="photo__user-name">Борис </strong><span class="photo__time">(20 часов назад)</span></p>
+            <div class="photo__item-inner">
+              <div class="photo__title"><strong class="photo__user-name">Борис </strong><span class="photo__time">(20 часов назад)</span></div>
               <p class="photo__user-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <p class="photo__like">Нравится: <span class="photo__like-counting">215</span></p>
+              <div class="photo__like">Нравится: <span class="photo__like-counting">215</span></div>
             </div>
           </div>
           <div class="photo__item">
             <a href="#">
-                <img class="photo__img--desktop" src="../images/photo-4-desktop.jpg" srcset="../images/photo-4-desktop@2x.jpg 2x" alt="">
-                <img class="photo__img--tablet" src="../images/photo-4-tablet.jpg" srcset="../images/photo-4-tablet@2x.jpg 2x" alt="">
-                <img class="photo__img--mobile" src="../images/photo-4-mobile.jpg" srcset="../images/photo-4-mobile@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--desktop" src="../images/photo-4-desktop.jpg" srcset="../images/photo-4-desktop@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--tablet" src="../images/photo-4-tablet.jpg" srcset="../images/photo-4-tablet@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--mobile" src="../images/photo-4-mobile.jpg" srcset="../images/photo-4-mobile@2x.jpg 2x" alt="">
             </a>
-            <div class="photo__item-wrapper">
-              <p class="photo__title"><strong class="photo__user-name">Сергей </strong><span class="photo__time">(25 часов назад)</span></p>
+            <div class="photo__item-inner">
+              <div class="photo__title"><strong class="photo__user-name">Сергей </strong><span class="photo__time">(25 часов назад)</span></div>
               <p class="photo__user-comment">Самая кубанская в мире!</p>
-              <p class="photo__like">Нравится: <span class="photo__like-counting">4</span></p>
+              <div class="photo__like">Нравится: <span class="photo__like-counting">4</span></div>
             </div>
           </div>
           <div class="photo__item">
             <a href="#">
-                <img class="photo__img--desktop" src="../images/photo-5-desktop.jpg" srcset="../images/photo-5-desktop@2x.jpg 2x" alt="">
-                <img class="photo__img--tablet" src="../images/photo-5-tablet.jpg" srcset="../images/photo-5-tablet@2x.jpg 2x" alt="">
-                <img class="photo__img--mobile" src="../images/photo-5-mobile.jpg" srcset="../images/photo-5-mobile@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--desktop" src="../images/photo-5-desktop.jpg" srcset="../images/photo-5-desktop@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--tablet" src="../images/photo-5-tablet.jpg" srcset="../images/photo-5-tablet@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--mobile" src="../images/photo-5-mobile.jpg" srcset="../images/photo-5-mobile@2x.jpg 2x" alt="">
             </a>
-            <div class="photo__item-wrapper">
-              <p class="photo__title"><strong class="photo__user-name">Максим </strong><span class="photo__time">(40 часов назад)</span></p>
+            <div class="photo__item-inner">
+              <div class="photo__title"><strong class="photo__user-name">Максим </strong><span class="photo__time">(40 часов назад)</span></div>
               <p class="photo__user-comment">Где снег-то?</p>
-              <p class="photo__like">Нравится: <span class="photo__like-counting">150</span></p>
+              <div class="photo__like">Нравится: <span class="photo__like-counting">150</span></div>
             </div>
           </div>
           <div class="photo__item">
             <a href="#">
-                <img class="photo__img--desktop" src="../images/photo-6-desktop.jpg" srcset="../images/photo-6-desktop@2x.jpg 2x" alt="">
-                <img class="photo__img--tablet" src="../images/photo-6-tablet.jpg" srcset="../images/photo-6-tablet@2x.jpg 2x" alt="">
-                <img class="photo__img--mobile" src="../images/photo-6-mobile.jpg" srcset="../images/photo-6-mobile@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--desktop" src="../images/photo-6-desktop.jpg" srcset="../images/photo-6-desktop@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--tablet" src="../images/photo-6-tablet.jpg" srcset="../images/photo-6-tablet@2x.jpg 2x" alt="">
+                <img class="photo__img  photo__img--mobile" src="../images/photo-6-mobile.jpg" srcset="../images/photo-6-mobile@2x.jpg 2x" alt="">
             </a>
-            <div class="photo__item-wrapper">
-              <p class="photo__title"><strong class="photo__user-name">Надежда </strong><span class="photo__time">(45 часов назад)</span></p>
+            <div class="photo__item-inner">
+              <div class="photo__title"><strong class="photo__user-name">Надежда </strong><span class="photo__time">(45 часов назад)</span></div>
               <p class="photo__user-comment">Всем GM и взаимные лайки!</p>
-              <p class="photo__like">Нравится: <span class="photo__like-counting">2560</span></p>
+              <div class="photo__like">Нравится: <span class="photo__like-counting">2560</span></div>
             </div>
           </div>
         </div>
       </div>
       <div class="upload">
-        <p class="upload__description">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="upload__description">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</div>
           <form class="upload__form" action="#" method="post">
-              <img class="photo__img--desktop" src="../images/photo-7-desktop.jpg" srcset="../images/photo-7-desktop@2x.jpg 2x" alt="">
-              <img class="photo__img--tablet" src="../images/photo-7-tablet.jpg" srcset="../images/photo-7-tablet@2x.jpg 2x" alt="">
-              <img class="photo__img--mobile" src="../images/photo-7-mobile.jpg" srcset="../images/photo-7-mobile@2x.jpg 2x" alt="">
-            <div class="upload__wrapper">
+              <img class="upload__img  photo__img  photo__img--desktop" src="../images/photo-7-desktop.jpg" srcset="../images/photo-7-desktop@2x.jpg 2x" alt="">
+              <img class="upload__img  photo__img  photo__img--tablet" src="../images/photo-7-tablet.jpg" srcset="../images/photo-7-tablet@2x.jpg 2x" alt="">
+              <img class="upload__img  photo__img  photo__img--mobile" src="../images/photo-7-mobile.jpg" srcset="../images/photo-7-mobile@2x.jpg 2x" alt="">
+            <div class="upload__inner">
               <div class="upload__filter-wrapper">
                 <div class="upload__filter  upload__filter--crop  upload__filter--active  upload__filter--crop-active">
-                  <a href="" class="">Обрезать</a>
+                  <a class="upload__link" href="" class="">Обрезать</a>
                   <div class="upload__toggle"></div>
                 </div>
                 <div class="upload__filter  upload__filter--fill">
-                  <a href="" class="">Насыщенность</a>
+                  <a class="upload__link" href="" class="">Насыщенность</a>
                   <div class="upload__toggle"></div>
                 </div>
                 <div class="upload__filter  upload__filter--contrast">
-                  <a href="" class="">Контрастность</a>
+                  <a class="upload__link" href="" class="">Контрастность</a>
                   <div class="upload__toggle"></div>
                 </div>
               </div>

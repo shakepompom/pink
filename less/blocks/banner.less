@@ -1,4 +1,4 @@
-.download {
+.banner {
   .container-fluid();
   position: relative;
   margin-top: 396px;
@@ -8,27 +8,37 @@
   text-align: center;
 }
 
-.download__wrapper {
+.banner__wrapper {
   position: relative;
   z-index: 3;
 }
 
-.download__slogan {
+.banner__iphone-hand {
+  position: absolute;
+  z-index: -1;
+  top: -317px;
+  left: -200px;
+  width: auto;
+  height: 320px;
+  clip: rect(auto, auto, 286px, auto);
+}
+
+.banner__slogan {
   display: none;
   margin: 0 auto;
 }
 
-.download__btn {
+.banner__btn {
   margin: 0 auto;
   background: @bg-dark;
 }
 
-.download__items {
+.banner__list {
   height: 56px;
   margin: 30px auto 25px auto;
 }
 
-.download__item {
+.banner__item {
   display: inline-block;
   margin-right: 35px;
 
@@ -37,26 +47,33 @@
   }
 }
 
-.download__item a {
+.banner__link {
   font-size: 0;
 }
 
-.download__description {
+.banner__description {
   padding: 0 20px;
   font-weight: 200;
 }
 
 @media @tablet-width {
-  .download {
+  .banner {
     position: static;
     width: 300px;
     margin-top: 0px;
     margin-left: 40px;
     padding: 95px 0 110px 0;
-    // outline: 1px solid blue;
   }
 
-  .download__slogan {
+  .banner__iphone-hand {
+    top: -20px;
+    left: -130px;
+    width: auto;
+    height: 545px;
+    clip: rect(auto, auto, auto, auto);
+  }
+
+  .banner__slogan {
     display: block;
     width: 210px;
     margin-bottom: 35px;
@@ -65,36 +82,43 @@
     font-weight: 200;
   }
 
-  .download__btn {
+  .banner__btn {
     width: 100%;
     background: transparent;
   }
 
-  .download__items {
+  .banner__list {
     margin: 45px auto 35px auto;
   }
 
-  .download__description {
+  .banner__description {
     padding: 0;
     font-size: 18px;
   }
 }
 
 @media @desktop-width {
-  .download {
+  .banner {
     bottom: 165px;
     left: 130px;
     margin-left: 130px;
     padding: 110px 0 120px 0;
   }
 
-  .download__slogan {
+  .banner__iphone-hand {
+    top: -17px;
+    left: 15px;
+    width: auto;
+    height: 645px;
+  }
+
+  .banner__slogan {
     margin-bottom: 55px;
     font-size: 48px;
     line-height: 58px;
   }
 
-  .download__items {
+  .banner__list {
     margin: 65px auto 55px auto;
   }
 }

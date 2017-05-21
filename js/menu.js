@@ -1,4 +1,4 @@
-var mainNav = document.querySelector(".main-nav__items");
+var mainNav = document.querySelector(".main-nav__list");
 var mainNav_toggle__open = document.querySelector(".main-nav__toggle--open");
 var mainNav_toggle__close = document.querySelector(".main-nav__toggle--close");
 var overlay = document.querySelector(".overlay-transparent");

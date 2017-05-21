@@ -1,5 +1,4 @@
 .competition {
-  // .blocks-wrapper();
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -53,8 +52,6 @@
   top: 37px;
   left: 0;
   right: 0;
-  // width: 320px;
-  // margin: 0 calc(~"(100% - 320px) / 2");
   padding-left: 35px;
   padding-right: 35px;
   text-align: center;
@@ -115,8 +112,6 @@
   top: 35px;
   left: 0;
   right: 0;
-  // width: 320px;
-  // margin: 0 calc(~"(100% - 320px) / 2");
   padding-left: 30px;
   padding-right: 30px;
   text-align: center;
@@ -150,8 +145,6 @@
   top: 55px;
   left: 0;
   right: 0;
-  // width: 320px;
-  // margin: 0 calc(~"(100% - 320px) / 2");
   text-align: center;
 }
 
@@ -453,7 +446,7 @@
     padding-bottom: 15px;
   }
 
-  .competition__contacts div {
+  .competition__contacts-inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -474,13 +467,13 @@
     padding-bottom: 15px;
     }
 
-  .competition__achievement > div {
+  .competition__achievement-inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .competition__label-wrapper {
+  .competition__achievement .competition__label-wrapper {
     width: calc(100%/3);
 
     &--selfie {
@@ -507,24 +500,6 @@
       order: 6;
     }
   }
-
-  // .competition__achievement input[type=checkbox] + label {
-  //
-  //   &::before {
-  //     left: 10px;
-  //   }
-  //
-  //   &:active::after {
-  //     left: 20px;
-  //   }
-  // }
-  //
-  // .competition__achievement input[type=checkbox]:checked + label {
-  //
-  //   &::after {
-  //     left: 20px;
-  //   }
-  // }
 
   .competition__emotions {
     width: 100%;

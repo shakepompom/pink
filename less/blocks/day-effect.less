@@ -1,0 +1,78 @@
+.day-effect {
+  .container-fluid();
+  display: none;
+}
+
+@media @tablet-width {
+  .day-effect {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 65px;
+    padding-bottom: 57px;
+    align-items: center;
+  }
+
+  .day-effect__img {
+    width: 240px;
+    height: 277px;
+  }
+
+  .day-effect__wrapper {
+    width: 50%;
+    text-align: left;
+  }
+
+  .day-effect__title {
+    padding-top: 5px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+
+  .day-effect__description {
+    padding: 10px 0;
+    padding-right: 15px;
+  }
+
+  .day-effect__link {
+    color: @pink;
+    text-decoration: underline;
+  }
+}
+
+@media @desktop-width {
+  .day-effect {
+    padding-top: 30px;
+    padding-bottom: 70px;
+    background: @bg-grey;
+  }
+
+  .day-effect__img {
+    width: 300px;
+    height: 346px;
+  }
+
+  .day-effect__wrapper {
+    width: 59%;
+    margin-right: 25px;
+  }
+
+  .day-effect__title {
+    padding-top: 45px;
+  }
+
+  .day-effect__title br {
+    display: none;
+  }
+
+  .day-effect__description {
+    padding: 20px 0 30px 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .day-effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

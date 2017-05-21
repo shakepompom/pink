@@ -11,12 +11,6 @@
   box-sizing: border-box;
 }
 
-// *:hover,
-// *:hover::before,
-// *:hover::after {
-//   transition: all 0.3s ease;
-// }
-
 nav,
 ul,
 li,
@@ -170,17 +164,14 @@ body {
   }
 
   &--social-twitter {
-    // background: url("../images/icon-twitter-red.svg") no-repeat center center;
     background: url("../images/icon-twitter.svg") no-repeat center center;
   }
 
   &--social-facebook{
-    // background: url("../images/icon-facebook-red.svg") no-repeat center center;
     background: url("../images/icon-facebook.svg") no-repeat center center;
   }
 
   &--social-youtube {
-    // background: url("../images/icon-youtube-red.svg") no-repeat 17px center;
     background: url("../images/icon-youtube.svg") no-repeat 17px center;
   }
 }
@@ -194,7 +185,9 @@ button {
   cursor: pointer;
 }
 
-input:not([type=checkbox]):not([type=radio]),
+input[type=text],
+input[type=tel],
+input[type=email],
 textarea {
   height: 63px;
   padding: 15px 20px;
@@ -202,49 +195,27 @@ textarea {
   border-radius: 2px;
   font-size: 18px;
   line-height: 30px;
+
+  &:hover {
+    border-color: @navy;
+  }
+
+  &:active {
+    border-color: @pink;
+  }
+
+  &:focus {
+    border-color: @pink;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
 }
 
 input::placeholder,
 textarea::placeholder {
   color: @navy;
-}
-
-input:not([type=checkbox]):not([type=radio]) {
-
-  &:hover {
-    border-color: @navy;
-  }
-
-  &:active {
-    border-color: @pink;
-  }
-
-  &:focus {
-    border-color: @pink;
-  }
-
-  &:focus::placeholder {
-    color: transparent;
-  }
-}
-
-textarea {
-
-  &:hover {
-    border-color: @navy;
-  }
-
-  &:active {
-    border-color: @pink;
-  }
-
-  &:focus {
-    border-color: @pink;
-  }
-
-  &:focus::placeholder {
-    color: transparent;
-  }
 }
 
 input[type=radio] + label {
