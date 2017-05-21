@@ -21,19 +21,22 @@
   margin: 20px;
   margin-left: 0;
 
+  & path {
+    transition: all 0.3s ease;
+  }
+
   &--tablet,
   &--desktop {
     display: none;
   }
 }
 
-.main-nav__logo:hover path,
+// .main-nav__logo:hover path,
 .main-nav__logo:hover path {
   fill: @pink;
-  transition: all 0.3s ease;
 }
 
-.main-nav__logo:active path,
+// .main-nav__logo:active path,
 .main-nav__logo:active path {
   fill: @white-03;
 }
@@ -150,11 +153,12 @@
   height: 73px;
 }
 
-.main-nav__item a {
+.main-nav__link {
   font-size: 18px;
   line-height: 32px;
   color: @white; //временная мера
   text-transform: uppercase;
+  transition: all 0.3s ease;
 
   &:hover {
     color: @pink;

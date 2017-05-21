@@ -54,7 +54,7 @@ ymaps.ready(init);
             myMap = new ymaps.Map("map", {
                 center: [59.938631, 30.323055],
                 zoom: 17,
-                controls: []
+                controls: ["zoomControl"]
             });
 
             myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {}, {
@@ -63,6 +63,8 @@ ymaps.ready(init);
                 iconImageSize: [36, 36],
                 iconImageOffset: [-18, -18]
             });
+
+            myMap.behaviors.disable('scrollZoom');
 
             myMap.geoObjects.add(myPlacemark);
         }

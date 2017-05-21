@@ -41,9 +41,12 @@ svg.page-footer__logo--html-academy {
   margin-left: 0;
 }
 
+.page-footer__logo--all path {
+  transition: all 0.3s ease;
+}
+
 .page-footer__logo:hover .page-footer__logo--all path {
   fill: @pink;
-  transition: all 0.3s ease;
 }
 
 .page-footer__logo:active .page-footer__logo--all path {
@@ -53,7 +56,6 @@ svg.page-footer__logo--html-academy {
 .page-footer__logo:active .page-footer__logo--mobile path,
 .page-footer__logo:active .page-footer__logo--desktop path {
   opacity: 0.3;
-  transition: all 0.3s ease;
 }
 
 // .page-footer__logo--html-academy path {
@@ -158,6 +160,10 @@ svg.page-footer__logo--html-academy {
 
     &--desktop {
       display: inline-block;
+    }
+
+    &--desktop path {
+      transition: all 0.3s ease;
     }
 
     &--html-academy {
